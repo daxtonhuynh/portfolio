@@ -1,14 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="theme-color" content="#00003d" />
-<meta name="description" content="Daxton Huynh — business, operations, analytics and systems thinking. Explore real-world business case studies and data analytics projects." />
-<title>Daxton Huynh | About Me · Business · Data Analytics</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#00003d" name="theme-color"/>
+<meta content="Daxton Huynh — business, operations, analytics and systems thinking. Explore skill-based evidence across business systems, commercial operations, strategy and analytics." name="description"/>
+<title>Daxton Huynh | About Me · Projects</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
 <style>
 :root{--navy:#00003d;--navy-light:#121243;--yellow:#faff00;--card:#403c70;--white:#fff;--muted:#d5d4e7;--border:rgba(255,255,255,.26)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--navy);color:var(--white);font-family:'Montserrat',Arial,sans-serif;-webkit-font-smoothing:antialiased}
@@ -338,74 +339,88 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
 .business-heading-rule{background:var(--yellow);height:2px;flex:1;min-width:15px}
 .business-count{font-size:10px;letter-spacing:.14em;font-weight:700;color:#c4c1de;white-space:nowrap}
 .business-project-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:minmax(0,1fr);gap:var(--business-gap) clamp(16px,1.9vw,27px)}
-#business .business-project-grid>.project-card{grid-column:span 2;min-width:0;min-height:0;height:100%}
-#business .business-project-grid>.project-card:nth-child(4){grid-column:2 / span 2}
-#business .business-project-grid>.project-card:nth-child(5){grid-column:4 / span 2}
-#business .project-card{background:linear-gradient(135deg,#393665 0%,#373460 78%,#32305a 100%);border:1px solid rgba(255,255,255,.12);border-radius:13px;box-shadow:0 12px 26px rgba(0,0,25,.12);padding:clamp(15px,2vh,24px) clamp(19px,1.7vw,25px);display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .18s,border-color .18s}
-#business .project-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--yellow)}
-#business .project-card:hover{transform:translateY(-2px);border-color:rgba(250,255,0,.5)}
-#business .business-card-header{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:22px;margin:0 0 clamp(9px,1.5vh,15px)}
-#business .business-card-overline{display:flex;align-items:center;gap:10px;min-width:0}
-#business .business-card-index{font-size:12px;font-weight:900;color:var(--yellow);letter-spacing:.08em}
-#business .business-card-company{font-size:9px;color:#cfcee8;font-weight:700;letter-spacing:.11em;white-space:nowrap}
-#business .business-card-brand{display:flex;align-items:center;justify-content:flex-end;flex:0 0 65px;min-width:0;opacity:.93}
-#business .business-card-brand .logo-slot{display:flex;align-items:center;justify-content:flex-end;width:65px;height:21px;max-width:100%}
-#business .business-card-brand .logo-slot img{max-width:100%;max-height:100%;object-fit:contain;width:auto;height:auto}
-#business .business-card-brand .logo-placeholder{font-size:7px;padding:1px 3px;border-color:#ffffff40}
-#business .business-card-content{flex:1;min-height:0;display:flex;flex-direction:column}
-#business .business-card-category{font-size:9px;font-weight:700;color:var(--yellow);letter-spacing:.11em;text-transform:uppercase;margin:0 0 clamp(7px,1vh,12px)}
-#business .business-card-title{font-size:clamp(17px,1.55vw,22px);line-height:1.12;font-weight:850;letter-spacing:-.035em;margin:0 0 clamp(7px,1.1vh,12px);color:#fff}
-#business .business-card-title span{display:block;color:#fff}
-#business .business-card-description{font-size:clamp(10px,.84vw,12px);line-height:1.5;color:#d8d7ed;margin:0;max-width:410px}
-#business .business-card-bottom{border-top:1px solid #ffffff29;padding-top:clamp(10px,1.5vh,15px);margin-top:clamp(13px,2vh,20px);display:flex;align-items:end;justify-content:space-between;gap:8px}
-#business .business-card-impact{display:flex;flex-direction:column;gap:4px;min-width:0}
-#business .business-card-impact strong{font-size:clamp(14px,1.25vw,19px);letter-spacing:-.035em;color:var(--yellow);line-height:1.05}
-#business .business-card-impact span{font-size:clamp(9px,.74vw,11px);color:#f2f1fc;line-height:1.25}
-#business .learn{align-self:flex-end;display:flex;flex:0 0 auto;margin:0;height:31px;gap:8px;padding:0 0 0 11px;background:var(--navy);color:var(--yellow);font-size:9px;border-radius:50px}
-#business .learn-circle{width:31px;height:31px;font-size:17px}
+:is(#business,#data) .business-project-grid>.project-card{grid-column:span 2;min-width:0;min-height:0;height:100%}
+:is(#business,#data) .business-project-grid>.project-card:nth-child(4){grid-column:2 / span 2}
+:is(#business,#data) .business-project-grid>.project-card:nth-child(5){grid-column:4 / span 2}
+:is(#business,#data) .project-card{background:linear-gradient(135deg,#393665 0%,#373460 78%,#32305a 100%);border:1px solid rgba(255,255,255,.12);border-radius:13px;box-shadow:0 12px 26px rgba(0,0,25,.12);padding:clamp(15px,2vh,24px) clamp(19px,1.7vw,25px);display:flex;flex-direction:column;position:relative;overflow:hidden;transition:transform .18s,border-color .18s}
+:is(#business,#data) .project-card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--yellow)}
+:is(#business,#data) .project-card:hover{transform:translateY(-2px);border-color:rgba(250,255,0,.5)}
+:is(#business,#data) .business-card-header{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:22px;margin:0 0 clamp(9px,1.5vh,15px)}
+:is(#business,#data) .business-card-overline{display:flex;align-items:center;gap:10px;min-width:0}
+:is(#business,#data) .business-card-index{font-size:12px;font-weight:900;color:var(--yellow);letter-spacing:.08em}
+:is(#business,#data) .business-card-company{font-size:9px;color:#cfcee8;font-weight:700;letter-spacing:.11em;white-space:nowrap}
+:is(#business,#data) .business-card-brand{display:flex;align-items:center;justify-content:flex-end;flex:0 0 65px;min-width:0;opacity:.93}
+:is(#business,#data) .business-card-brand .logo-slot{display:flex;align-items:center;justify-content:flex-end;width:65px;height:21px;max-width:100%}
+:is(#business,#data) .business-card-brand .logo-slot img{max-width:100%;max-height:100%;object-fit:contain;width:auto;height:auto}
+:is(#business,#data) .business-card-brand .logo-placeholder{font-size:7px;padding:1px 3px;border-color:#ffffff40}
+:is(#business,#data) .business-card-content{flex:1;min-height:0;display:flex;flex-direction:column}
+:is(#business,#data) .business-card-category{font-size:9px;font-weight:700;color:var(--yellow);letter-spacing:.11em;text-transform:uppercase;margin:0 0 clamp(7px,1vh,12px)}
+:is(#business,#data) .business-card-title{font-size:clamp(17px,1.55vw,22px);line-height:1.12;font-weight:850;letter-spacing:-.035em;margin:0 0 clamp(7px,1.1vh,12px);color:#fff}
+:is(#business,#data) .business-card-title span{display:block;color:#fff}
+:is(#business,#data) .business-card-description{font-size:clamp(10px,.84vw,12px);line-height:1.5;color:#d8d7ed;margin:0;max-width:410px}
+:is(#business,#data) .business-card-bottom{border-top:1px solid #ffffff29;padding-top:clamp(10px,1.5vh,15px);margin-top:clamp(13px,2vh,20px);display:flex;align-items:end;justify-content:space-between;gap:8px}
+:is(#business,#data) .business-card-impact{display:flex;flex-direction:column;gap:4px;min-width:0}
+:is(#business,#data) .business-card-impact strong{font-size:clamp(14px,1.25vw,19px);letter-spacing:-.035em;color:var(--yellow);line-height:1.05}
+:is(#business,#data) .business-card-impact span{font-size:clamp(9px,.74vw,11px);color:#f2f1fc;line-height:1.25}
+:is(#business,#data) .learn{align-self:flex-end;display:flex;flex:0 0 auto;margin:0;height:31px;gap:8px;padding:0 0 0 11px;background:var(--navy);color:var(--yellow);font-size:9px;border-radius:50px}
+:is(#business,#data) .learn-circle{width:31px;height:31px;font-size:17px}
 /* Laptop/Desktop: use viewport height while maintaining readable type. */
 @media(min-width:960px) and (min-height:650px){
-  body.business-active{overflow:hidden}
-  body.business-active .site-footer{display:none}
-  #business .business-dashboard{height:calc(100vh - 79px);height:calc(100dvh - 79px);padding-top:clamp(17px,2.6vh,30px);padding-bottom:clamp(15px,2.5vh,26px);display:flex;flex-direction:column}
-  #business .business-intro{flex:0 0 auto;margin-bottom:clamp(12px,2vh,21px)}
-  #business .business-grid-heading{flex:0 0 auto;margin-bottom:clamp(10px,1.7vh,18px)}
-  #business .business-project-grid{flex:1;min-height:0;grid-template-rows:repeat(2,minmax(0,1fr))}
-  #business .project-card{min-height:0}
+  body:is(.business-active,.data-active){overflow:hidden}
+  body:is(.business-active,.data-active) .site-footer{display:none}
+  :is(#business,#data) .business-dashboard{height:calc(100vh - 79px);height:calc(100dvh - 79px);padding-top:clamp(17px,2.6vh,30px);padding-bottom:clamp(15px,2.5vh,26px);display:flex;flex-direction:column}
+  :is(#business,#data) .business-intro{flex:0 0 auto;margin-bottom:clamp(12px,2vh,21px)}
+  :is(#business,#data) .business-grid-heading{flex:0 0 auto;margin-bottom:clamp(10px,1.7vh,18px)}
+  :is(#business,#data) .business-project-grid{flex:1;min-height:0;grid-template-rows:repeat(2,minmax(0,1fr))}
+  :is(#business,#data) .project-card{min-height:0}
 }
 /* Very narrow desktop: prioritize readability over forced card width. */
 @media(min-width:960px) and (max-width:1160px) and (min-height:650px){
-  #business .project-card{padding:13px 13px}
-  #business .business-card-company{font-size:8px}
-  #business .business-card-brand{flex-basis:40px}
-  #business .business-card-brand .logo-slot{width:40px}
-  #business .business-card-title{font-size:16px}
-  #business .business-card-description{font-size:10px}
-  #business .learn{font-size:7px;height:26px;padding-left:8px;gap:5px}
-  #business .learn-circle{width:26px;height:26px}
+  :is(#business,#data) .project-card{padding:13px 13px}
+  :is(#business,#data) .business-card-company{font-size:8px}
+  :is(#business,#data) .business-card-brand{flex-basis:40px}
+  :is(#business,#data) .business-card-brand .logo-slot{width:40px}
+  :is(#business,#data) .business-card-title{font-size:16px}
+  :is(#business,#data) .business-card-description{font-size:10px}
+  :is(#business,#data) .learn{font-size:7px;height:26px;padding-left:8px;gap:5px}
+  :is(#business,#data) .learn-circle{width:26px;height:26px}
 }
 /* Touch, phone and short browser windows: content is readable, scrolling allowed. */
 @media(max-width:959px),(max-height:649px){
-  body.business-active{overflow:auto}
-  #business .business-dashboard{height:auto;min-height:0;padding:34px 24px 65px}
-  #business .business-project-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto;gap:18px}
-  #business .business-project-grid>.project-card,#business .business-project-grid>.project-card:nth-child(4),#business .business-project-grid>.project-card:nth-child(5){grid-column:auto;min-height:265px}
-  #business .business-card-title{font-size:19px}
-  #business .business-card-description{font-size:12px}
-  #business .business-card-impact span{font-size:10px}
+  body:is(.business-active,.data-active){overflow:auto}
+  :is(#business,#data) .business-dashboard{height:auto;min-height:0;padding:34px 24px 65px}
+  :is(#business,#data) .business-project-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto;gap:18px}
+  :is(#business,#data) .business-project-grid>.project-card,:is(#business,#data) .business-project-grid>.project-card:nth-child(4),:is(#business,#data) .business-project-grid>.project-card:nth-child(5){grid-column:auto;min-height:265px}
+  :is(#business,#data) .business-card-title{font-size:19px}
+  :is(#business,#data) .business-card-description{font-size:12px}
+  :is(#business,#data) .business-card-impact span{font-size:10px}
 }
 @media(max-width:600px){
-  #business .business-dashboard{padding:30px 19px 55px}
-  #business .business-intro{display:block;margin-bottom:25px}
-  #business .business-intro-copy{font-size:12px;margin-top:12px}
-  #business .business-grid-heading{gap:12px}
-  #business .business-project-grid{grid-template-columns:1fr;max-width:440px;margin:0 auto;gap:16px}
-  #business .business-project-grid>.project-card,#business .business-project-grid>.project-card:nth-child(4),#business .business-project-grid>.project-card:nth-child(5){grid-column:auto;min-height:250px}
-  #business .project-card{padding:21px 22px}
-  #business .business-card-title{font-size:22px}
+  :is(#business,#data) .business-dashboard{padding:30px 19px 55px}
+  :is(#business,#data) .business-intro{display:block;margin-bottom:25px}
+  :is(#business,#data) .business-intro-copy{font-size:12px;margin-top:12px}
+  :is(#business,#data) .business-grid-heading{gap:12px}
+  :is(#business,#data) .business-project-grid{grid-template-columns:1fr;max-width:440px;margin:0 auto;gap:16px}
+  :is(#business,#data) .business-project-grid>.project-card,:is(#business,#data) .business-project-grid>.project-card:nth-child(4),:is(#business,#data) .business-project-grid>.project-card:nth-child(5){grid-column:auto;min-height:250px}
+  :is(#business,#data) .project-card{padding:21px 22px}
+  :is(#business,#data) .business-card-title{font-size:22px}
 }
 
 
+
+/* DATA — Exactly two case studies, using the same cards as Business. */
+#data .business-project-grid{grid-template-columns:repeat(2,minmax(0,1fr));max-width:990px;width:100%;margin:0 auto;gap:clamp(16px,1.9vw,27px)}
+#data .business-project-grid>.project-card{grid-column:auto;min-height:300px}
+#data .business-card-company{letter-spacing:.08em}
+#data .business-card-title{max-width:380px}
+@media(min-width:960px) and (min-height:650px){
+  #data .business-project-grid{flex:0 0 auto;grid-template-rows:1fr}
+  #data .business-project-grid>.project-card{height:clamp(275px,42vh,380px)}
+}
+@media(max-width:600px){
+  #data .business-project-grid{grid-template-columns:1fr;max-width:440px}
+  #data .business-project-grid>.project-card{min-height:265px;height:auto}
+}
 /* ===================================================================
    ABOUT ME — CLEAN NAVY PORTRAIT (NO BACKGROUND ARTWORK)
    The photo uses your existing file assets/portrait.png.
@@ -471,161 +486,800 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
   body.home-active #about .pill-link { min-width: 224px; }
 }
 
+
+/* ABOUT ME — Two-column hero; original floating metrics moved to the right.
+   No cards, colored panels, boxes, or extra labels around the metrics. */
+#about .hero{background:var(--navy);min-height:0;}
+#about .hero-inner.home-grid{
+  width:min(100%,1500px);max-width:1500px;min-height:0;
+  display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);
+  align-items:center;gap:clamp(40px,4vw,75px);
+  padding:clamp(28px,4vh,62px) clamp(32px,4.8vw,75px);
+}
+#about .home-intro{min-width:0;width:100%!important;max-width:none!important}
+#about .home-hello{font-size:clamp(28px,2.5vw,39px);letter-spacing:-.035em;line-height:1.15;font-weight:600;margin:0 0 8px;color:#f5f4ff}
+#about #home-title{font-size:clamp(52px,5.05vw,78px)!important;line-height:1.05;letter-spacing:-.065em;font-weight:900;white-space:normal!important;margin:0;word-spacing:normal}
+#about #home-title span{display:block;color:var(--yellow)}
+#about .home-intro-rule{height:3px;background:var(--yellow);width:80px;margin:clamp(19px,2.7vh,30px) 0}
+#about .home-bio{max-width:585px;display:grid;gap:clamp(12px,1.8vh,18px)}
+#about .home-bio p{font-size:clamp(13px,1.05vw,16px);font-weight:500;line-height:1.78;letter-spacing:.002em;margin:0;color:#dcdbee}
+#about .home-bio strong{font-weight:850;color:#fff}
+#about .hero-cta{display:flex;align-items:center;justify-content:flex-start;gap:14px;margin-top:clamp(27px,4vh,42px);transform:none!important;width:100%;max-width:none}
+#about .pill-link{min-width:0;width:auto;min-height:45px;padding:5px 5px 5px 17px;gap:14px;flex:0 1 auto;font-size:11px}
+#about .pill-link .arrow{width:34px;height:34px}
+/* Right side directly on the navy canvas, like the original layout. */
+#about .home-profile-panel{min-width:0;max-width:none;margin:0;padding:0;border:0;border-radius:0;box-shadow:none;background:none;position:static}
+#about .home-profile-panel::before{display:none}
+#about .home-metrics{display:grid;align-items:stretch}
+#about .home-metrics-experience{grid-template-columns:repeat(3,minmax(0,1fr))}
+#about .home-metrics-education{grid-template-columns:repeat(2,minmax(0,1fr));max-width:88%;margin-inline:auto}
+#about .home-education-section{margin-top:clamp(42px,6vh,65px)}
+#about .home-stat{min-width:0;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;padding:0 clamp(10px,1.25vw,20px)}
+#about .home-stat:not(:last-child)::after{content:'';position:absolute;width:1px;right:0;top:0;bottom:0;background:rgba(231,230,255,.47)}
+#about .home-metrics-experience .home-stat{min-height:245px}
+#about .home-metrics-education .home-stat{min-height:190px}
+#about .home-stat-figure{display:flex;flex-direction:column;align-items:center;gap:2px}
+#about .home-stat-figure strong{font-size:clamp(47px,5vw,75px);font-weight:900;color:var(--yellow);letter-spacing:-.065em;line-height:1}
+#about .home-stat-figure span{font-size:clamp(13px,1vw,17px);font-weight:780;color:#fff}
+#about .home-stat-caption{font-size:clamp(10px,.87vw,14px);line-height:1.55;color:#efedfc;margin:16px 0 0;min-height:46px}
+#about .home-stat-rule{display:block;background:#b4b2d6;height:1px;width:50px;margin:10px auto 17px;flex:0 0 auto}
+#about .home-stat-logos{display:flex;align-items:center;justify-content:center;gap:8px;max-width:100%;width:100%;height:44px;margin-top:0}
+#about .home-stat-logos .logo-slot{display:flex;align-items:center;justify-content:center;height:38px;width:min(100%,138px);max-width:138px}
+#about .home-stat-logos .logo-slot img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+#about .home-stat-logos .logo-placeholder{font-size:10px;white-space:normal;overflow-wrap:anywhere;border-color:rgba(255,255,255,.16)}
+#about .home-stat-logos.home-startup-logos{gap:7px}
+#about .home-stat-logos.home-startup-logos .logo-slot{width:calc(50% - 3px);max-width:97px;height:40px}
+#about .home-stat-degree h2{color:var(--yellow);font-size:clamp(22px,2.15vw,34px);font-weight:900;line-height:1.14;letter-spacing:-.045em;margin:0;min-height:85px;display:flex;flex-direction:column;justify-content:center}
+#about .home-stat-degree h2 span{display:block}
+#about .home-metrics-education .home-stat:first-child h2{font-size:clamp(46px,4.35vw,68px);letter-spacing:-.065em}
+#about .home-stat-degree .home-stat-rule{margin:10px auto 16px}
+#about .home-metrics-education .home-stat-logos{height:45px}
+#about .home-metrics-education .logo-slot{max-width:170px;width:170px;height:44px}
+#about .home-metrics-education .logo-placeholder{font-size:10px}
+@media(min-width:1081px) and (min-height:620px){
+  body.home-active #about{height:calc(100dvh - 79px)!important;min-height:0!important}
+  body.home-active #about .hero{height:100%!important;min-height:0!important}
+  body.home-active #about .hero-inner.home-grid{height:100%!important;min-height:0!important;display:grid!important;align-items:start;padding-top: 110px}
+}
+@media(min-width:1081px) and (max-height:820px){
+  #about .hero-inner.home-grid{padding-top:2px;padding-bottom:18px;gap:30px}
+  #about .home-intro-rule{margin-top:16px;margin-bottom:16px}
+  #about .home-bio{gap:10px}
+  #about .home-bio p{font-size:12.5px;line-height:1.62}
+  #about .hero-cta{margin-top:22px}
+  #about .home-metrics-experience .home-stat{min-height:215px}
+  #about .home-metrics-education .home-stat{min-height:160px}
+  #about .home-education-section{margin-top:40px}
+  #about .home-stat-figure strong{font-size:54px}
+  #about .home-stat-caption{margin-top:10px;min-height:40px}
+  #about .home-stat-rule{margin:8px auto 12px}
+  #about .home-stat-degree h2{font-size:24px;min-height:72px}
+}
+@media(max-width:1080px){
+  body.home-active{overflow:auto!important}
+  body.home-active .site-footer{display:flex!important}
+  body.home-active #about{height:auto!important;min-height:0!important}
+  body.home-active #about .hero{height:auto!important;min-height:0!important}
+  body.home-active #about .hero-inner.home-grid{height:auto!important;display:grid!important;grid-template-columns:1fr;gap:54px;width:min(100%,790px);padding:48px 30px 75px}
+  #about .home-intro{width:100%!important}
+  #about #home-title{font-size:clamp(55px,7vw,77px)!important}
+  #about .home-bio p{font-size:15px}
+  #about .home-stat-figure strong{font-size:60px}
+  #about .home-stat-degree h2{font-size:28px}
+  #about .home-metrics-education .home-stat:first-child h2{font-size:59px}
+}
+@media(max-width:600px){
+  body.home-active #about .hero-inner.home-grid{padding:35px 18px 60px;gap:43px}
+  #about .home-hello{font-size:26px}
+  #about #home-title{font-size:clamp(43px,10.4vw,65px)!important}
+  #about .home-bio p{font-size:13.5px;line-height:1.7}
+  #about .hero-cta{flex-wrap:wrap;gap:10px;margin-top:25px}
+  #about .pill-link{width:100%;justify-content:space-between;max-width:350px}
+  #about .home-metrics-experience{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #about .home-metrics-education{grid-template-columns:repeat(2,minmax(0,1fr));max-width:100%}
+  #about .home-stat{padding:0 5px}
+  #about .home-metrics-experience .home-stat{min-height:180px}
+  #about .home-metrics-education .home-stat{min-height:140px}
+  #about .home-stat-figure strong{font-size:clamp(26px,8.2vw,40px)}
+  #about .home-stat-figure span{font-size:11px}
+  #about .home-stat-caption{font-size:9px;line-height:1.4;margin-top:7px;min-height:38px}
+  #about .home-stat-rule{width:32px;margin:8px auto 10px}
+  #about .home-stat-logos{height:30px;gap:3px}
+  #about .home-stat-logos .logo-slot{height:26px;max-width:90px}
+  #about .home-stat-logos.home-startup-logos{gap:2px;flex-wrap:wrap}
+  #about .home-stat-logos.home-startup-logos .logo-slot{width:48%;height:27px}
+  #about .home-stat-logos .logo-placeholder{font-size:7px;padding:2px}
+  #about .home-education-section{margin-top:38px}
+  #about .home-stat-degree h2{font-size:clamp(16px,5vw,23px);min-height:53px}
+  #about .home-metrics-education .home-stat:first-child h2{font-size:clamp(37px,11vw,52px)}
+  #about .home-metrics-education .logo-slot{max-width:120px;width:95%;height:35px}
+}
+
+
+/* ABOUT ME refinement — compact floating metrics, academic qualifications first. */
+#about .hero-inner.home-grid{grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:clamp(22px,2.2vw,36px)}
+#about .home-profile-panel{width:92%;max-width:650px;margin-left:auto;margin-right:auto}
+#about .home-metrics-education{grid-template-columns:repeat(2,minmax(0,1fr));max-width:91%}
+#about .home-experience-section{margin-top:clamp(27px,4.2vh,43px)}
+#about .home-metrics-education .home-stat{min-height:161px}
+#about .home-metrics-experience .home-stat{min-height:202px}
+#about .home-stat{padding-inline:clamp(7px,.8vw,13px)}
+#about .home-stat-degree h2{min-height:82px;max-width:98%;line-height:1.2;letter-spacing:-.045em}
+#about .home-metrics-education .home-stat:first-child h2{font-size:clamp(20px,2vw,29px);letter-spacing:-.047em}
+#about .home-stat-degree-mba h2{font-size:clamp(17px,1.65vw,25px)}
+#about .home-metrics-experience .home-stat-figure strong{font-size:clamp(43px,4.35vw,65px)}
+#about .home-stat-caption{margin-top:11px;min-height:36px}
+#about .home-stat-rule{margin:9px auto 13px}
+#about .home-metrics-education .home-stat-rule{margin:6px auto 12px}
+@media(min-width:1081px) and (max-height:820px){
+  #about .home-metrics-education .home-stat{min-height:145px}
+  #about .home-metrics-experience .home-stat{min-height:177px}
+  #about .home-stat-degree h2{min-height:72px}
+  #about .home-experience-section{margin-top:26px}
+  #about .home-metrics-experience .home-stat-figure strong{font-size:49px}
+}
+@media(max-width:1080px){
+  #about .home-profile-panel{width:min(94%,670px);margin-inline:auto}
+  #about .home-metrics-education .home-stat:first-child h2{font-size:clamp(22px,3vw,29px)}
+  #about .home-stat-degree-mba h2{font-size:clamp(20px,2.5vw,25px)}
+}
+@media(max-width:600px){
+  #about .home-profile-panel{width:100%;max-width:420px}
+  #about .home-metrics-education{max-width:100%}
+  #about .home-metrics-education .home-stat{min-height:115px}
+  #about .home-stat-degree h2{min-height:67px}
+  #about .home-metrics-education .home-stat:first-child h2{font-size:clamp(16px,4.5vw,22px)}
+  #about .home-stat-degree-mba h2{font-size:clamp(15px,3.9vw,20px)}
+  #about .home-experience-section{margin-top:31px}
+  #about .home-metrics-experience .home-stat{min-height:160px}
+  #about .home-metrics-experience .home-stat-figure strong{font-size:clamp(27px,8vw,39px)}
+  #about .home-stat-caption{margin-top:7px;min-height:39px}
+}
+
+
+/* ABOUT ME — Degree titles and visual logo balancing (Nov 2026).
+   Only the five home-page identity marks are affected; project card logos remain unchanged. */
+#about .home-stat-degree h2,
+#about .home-metrics-education .home-stat:first-child h2,
+#about .home-stat-degree-mba h2{
+  width:100%;max-width:100%;min-height:80px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:5px;letter-spacing:-.03em;
+}
+#about .home-stat-degree h2 .degree-prefix,
+#about .home-metrics-education .home-stat:first-child h2 .degree-prefix{
+  display:block;font-size:clamp(16px,1.35vw,21px);line-height:1.15;font-weight:800;
+}
+#about .home-stat-degree h2 .degree-field,
+#about .home-metrics-education .home-stat:first-child h2 .degree-field{
+  display:block;font-size:clamp(19px,1.6vw,26px);line-height:1.18;font-weight:900;
+  letter-spacing:-.044em;
+}
+#about .home-stat-degree-mba h2 .degree-field{
+  font-size:clamp(17px,1.4vw,22px);
+}
+/* Similar perceived sizes even though the logos have different aspect ratios. */
+#about .home-stat-logos{height:48px;gap:8px}
+#about .home-stat-logos .logo-slot{height:44px;flex:0 1 auto}
+#about .home-stat-logos .logo-slot img{max-width:100%;max-height:100%;height:auto;width:auto;object-fit:contain;object-position:center}
+#about .home-metrics-education .home-stat-logos{height:51px}
+#about .home-metrics-education .logo-slot[data-logo="trent"]{width:min(100%,153px);height:47px;max-width:153px}
+#about .home-metrics-education .logo-slot[data-logo="westernSydney"]{width:min(100%,163px);height:47px;max-width:163px}
+#about .home-metrics-experience .logo-slot[data-logo="siemens"]{width:min(100%,141px);height:44px;max-width:141px}
+#about .home-metrics-experience .logo-slot[data-logo="ami"]{width:min(100%,100px);height:47px;max-width:100px}
+#about .home-stat-logos.home-startup-logos{height:48px;gap:8px;flex-wrap:nowrap}
+#about .home-startup-logos .logo-slot[data-logo="mantahq"]{width:min(58%,115px);max-width:115px;height:45px}
+#about .home-startup-logos .logo-slot[data-logo="ellemuel"]{width:min(42%,83px);max-width:83px;height:45px}
+#about .home-startup-logos .logo-slot[data-logo="mantahq"] img{transform:scale(1.12);transform-origin:center}
+#about .home-startup-logos .logo-slot[data-logo="ellemuel"] img{transform:scale(1.48);transform-origin:center}
+@media(min-width:1081px) and (max-height:820px){
+  #about .home-stat-degree h2,
+  #about .home-metrics-education .home-stat:first-child h2,
+  #about .home-stat-degree-mba h2{min-height:70px}
+}
+@media(max-width:1080px){
+  #about .home-stat-degree h2 .degree-prefix,
+  #about .home-metrics-education .home-stat:first-child h2 .degree-prefix{font-size:clamp(16px,2vw,20px)}
+  #about .home-stat-degree h2 .degree-field,
+  #about .home-metrics-education .home-stat:first-child h2 .degree-field{font-size:clamp(20px,2.6vw,26px)}
+  #about .home-stat-degree-mba h2 .degree-field{font-size:clamp(18px,2.3vw,23px)}
+}
+@media(max-width:600px){
+  #about .home-stat-degree h2,
+  #about .home-metrics-education .home-stat:first-child h2,
+  #about .home-stat-degree-mba h2{min-height:65px;gap:4px}
+  #about .home-stat-degree h2 .degree-prefix,
+  #about .home-metrics-education .home-stat:first-child h2 .degree-prefix{font-size:clamp(13px,3.65vw,17px)}
+  #about .home-stat-degree h2 .degree-field,
+  #about .home-metrics-education .home-stat:first-child h2 .degree-field{font-size:clamp(15px,4vw,20px)}
+  #about .home-stat-degree-mba h2 .degree-field{font-size:clamp(12px,3.28vw,17px)}
+  #about .home-metrics-education .home-stat-logos{height:38px}
+  #about .home-metrics-education .logo-slot[data-logo="trent"],
+  #about .home-metrics-education .logo-slot[data-logo="westernSydney"]{width:min(95%,116px);height:36px}
+  #about .home-metrics-experience .logo-slot[data-logo="siemens"]{width:min(100%,83px);height:30px}
+  #about .home-metrics-experience .logo-slot[data-logo="ami"]{width:min(100%,62px);height:32px}
+  #about .home-stat-logos.home-startup-logos{height:34px;gap:1px;flex-wrap:nowrap}
+  #about .home-startup-logos .logo-slot[data-logo="mantahq"]{width:60%;max-width:61px;height:33px}
+  #about .home-startup-logos .logo-slot[data-logo="ellemuel"]{width:39%;max-width:44px;height:33px}
+  #about .home-startup-logos .logo-slot[data-logo="mantahq"] img{transform:scale(1.10)}
+  #about .home-startup-logos .logo-slot[data-logo="ellemuel"] img{transform:scale(1.37)}
+}
+
+
+/* ABOUT ME — Nov 06 refinement: intentional line breaks, logo ratios and airy spacing.
+   Only #about is affected; neither business/data project cards nor global logo sizing changes. */
+#about .home-bio{gap:clamp(16px,2.4vh,23px);max-width:680px}
+#about .home-toolkit{margin-top:2px!important}
+#about .home-toolkit strong{color:var(--yellow);font-weight:900}
+
+/* More breathing room between the two rows and between metrics, with no enclosing cards. */
+#about .home-profile-panel{width:98%;max-width:710px}
+#about .home-metrics-education{max-width:100%;column-gap:clamp(18px,2.2vw,36px)}
+#about .home-metrics-experience{column-gap:clamp(12px,1.8vw,30px)}
+#about .home-experience-section{margin-top:clamp(49px,7.3vh,78px)}
+#about .home-metrics-education .home-stat{min-height:165px}
+#about .home-metrics-experience .home-stat{min-height:210px}
+#about .home-metrics-education .home-stat:not(:last-child)::after{right:-14px}
+#about .home-metrics-experience .home-stat:not(:last-child)::after{right:-10px}
+#about .home-stat{padding-inline:clamp(7px,.9vw,15px)}
+#about .home-stat-degree h2 .degree-prefix{display:block;white-space:nowrap}
+#about .home-stat-degree h2 .degree-field{display:block}
+@media(min-width:601px){
+  #about .home-stat-degree h2 .degree-field{white-space:nowrap}
+}
+
+/* Four single-brand marks: 90% of previously specified box dimensions. */
+#about .home-metrics-education .logo-slot[data-logo="trent"]{width:min(100%,138px);max-width:138px;height:42px}
+#about .home-metrics-education .logo-slot[data-logo="westernSydney"]{width:min(100%,147px);max-width:147px;height:42px}
+#about .home-metrics-experience .logo-slot[data-logo="siemens"]{width:min(100%,127px);max-width:127px;height:40px}
+#about .home-metrics-experience .logo-slot[data-logo="ami"]{width:min(100%,90px);max-width:90px;height:42px}
+/* Startup marks: increase visual scale by 30% from previous 1.12 / 1.48. */
+#about .home-startup-logos .logo-slot[data-logo="mantahq"] img{transform:scale(1.456);transform-origin:center}
+#about .home-startup-logos .logo-slot[data-logo="ellemuel"] img{transform:scale(1.924);transform-origin:center}
+
+@media(min-width:1081px) and (max-height:820px){
+  #about .home-experience-section{margin-top:clamp(34px,5.7vh,52px)}
+  #about .home-metrics-education .home-stat{min-height:147px}
+  #about .home-metrics-experience .home-stat{min-height:184px}
+  #about .home-bio{gap:12px}
+}
+@media(max-width:1080px){
+  #about .home-profile-panel{width:min(98%,710px)}
+  #about .home-experience-section{margin-top:clamp(45px,6vh,65px)}
+}
+@media(max-width:600px){
+  #about .home-profile-panel{width:100%;max-width:440px}
+  #about .home-metrics-education{column-gap:11px}
+  #about .home-metrics-experience{column-gap:6px}
+  #about .home-metrics-education .home-stat:not(:last-child)::after{right:-6px}
+  #about .home-metrics-experience .home-stat:not(:last-child)::after{right:-3px}
+  #about .home-experience-section{margin-top:42px}
+  #about .home-metrics-education .home-stat{min-height:126px}
+  #about .home-metrics-experience .home-stat{min-height:168px}
+  #about .home-bio{gap:14px}
+  #about .home-metrics-education .logo-slot[data-logo="trent"],
+  #about .home-metrics-education .logo-slot[data-logo="westernSydney"]{width:min(95%,104px);max-width:104px;height:33px}
+  #about .home-metrics-experience .logo-slot[data-logo="siemens"]{width:min(100%,75px);max-width:75px;height:27px}
+  #about .home-metrics-experience .logo-slot[data-logo="ami"]{width:min(100%,56px);max-width:56px;height:29px}
+  #about .home-startup-logos .logo-slot[data-logo="mantahq"] img{transform:scale(1.43)}
+  #about .home-startup-logos .logo-slot[data-logo="ellemuel"] img{transform:scale(1.781)}
+}
+
+
+/* ===============================================================
+   NOV 2026 — UNIFIED, RECRUITER-ORIENTED PORTFOLIO
+   Single project list, skill-first evidence cards, no world split.
+   =============================================================== */
+#projects { background:var(--navy); }
+#projects .unified-projects { max-width:1460px; margin:auto; padding:clamp(30px,4vw,58px) clamp(23px,4.1vw,65px) 90px; }
+#projects .projects-intro { display:flex;align-items:end;justify-content:space-between;gap:34px;margin-bottom:30px; }
+#projects .projects-kicker {font-size:11px;letter-spacing:.16em;font-weight:900;color:var(--yellow);margin:0 0 12px}
+#projects .projects-intro h1 {font-size:clamp(37px,4.5vw,67px);letter-spacing:-.06em;line-height:1.05;margin:0 0 14px;font-weight:900}
+#projects .projects-intro h1 span {color:var(--yellow)}
+#projects .projects-intro p:not(.projects-kicker) {color:#d5d3e9;font-size:13px;line-height:1.75;margin:0;max-width:760px}
+#projects .projects-intro-aside {min-width:180px;display:flex;align-items:end;flex-direction:column;gap:3px;white-space:nowrap}
+#projects .projects-intro-aside strong {color:var(--yellow);font-size:45px;letter-spacing:-.06em;line-height:1}
+#projects .projects-intro-aside span {font-size:10px;letter-spacing:.1em;font-weight:800}
+#projects .projects-intro-aside small {color:#a9a7cc;font-size:10px;margin-top:4px}
+#projects .expertise {padding:22px 0 26px;border-top:1px solid #4a4876;border-bottom:1px solid #4a4876}
+#projects .expertise-heading {display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:14px;font-size:10px;font-weight:850;letter-spacing:.09em;color:var(--yellow)}
+#projects .expertise-heading span:last-child {color:#aeadcb;letter-spacing:0;font-weight:500}
+#projects .expertise-filters {display:flex;gap:10px;flex-wrap:wrap}
+#projects .expertise-filter {background:transparent;border:1px solid #65618e;color:#e9e7fc;border-radius:99px;padding:11px 16px;font-size:11px;font-weight:750;line-height:1.25;cursor:pointer;transition:background .16s,border-color .16s,color .16s,transform .16s}
+#projects .expertise-filter:hover {border-color:var(--yellow);transform:translateY(-1px)}
+#projects .expertise-filter.is-active {background:var(--yellow);color:var(--navy);border-color:var(--yellow);font-weight:900}
+#projects .projects-meta {display:flex;justify-content:space-between;gap:12px;align-items:center;margin:25px 0 18px}
+#projects .projects-meta p {font-size:12px;font-weight:800;margin:0;color:#fff}
+#projects .projects-meta span {font-size:10px;color:#aeadcb}
+#projects .evidence-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px}
+#projects .evidence-card {background:linear-gradient(134deg,#3a3768 0%,#34315c 84%,#2b2954 100%);border:1px solid rgba(255,255,255,.16);border-radius:15px;padding:23px 25px 20px;position:relative;display:flex;flex-direction:column;min-width:0;min-height:540px;box-shadow:0 14px 30px rgba(0,0,17,.12);transition:transform .18s,border-color .18s}
+#projects .evidence-card:hover {border-color:rgba(250,255,0,.52);transform:translateY(-3px)}
+#projects .evidence-card::before {content:"";width:4px;background:var(--yellow);position:absolute;top:0;bottom:0;left:0;border-radius:15px 0 0 15px}
+#projects .evidence-card[hidden] {display:none!important}
+#projects .evidence-card-head {display:flex;justify-content:space-between;align-items:center;gap:10px}
+#projects .evidence-period {font-size:10px;color:var(--yellow);letter-spacing:.095em;font-weight:900;margin:0 0 5px}
+#projects .evidence-organization {font-size:10px;color:#d0cee7;letter-spacing:.075em;font-weight:800;margin:0}
+#projects .evidence-logo {display:flex;width:87px;height:31px;max-width:87px;flex:0 0 87px;align-items:center;justify-content:flex-end}
+#projects .evidence-logo img {width:auto;max-width:100%;height:auto;max-height:100%;object-fit:contain}
+#projects .evidence-logo .logo-placeholder {font-size:9px;text-align:center}
+#projects .evidence-project {margin:15px 0 18px}
+#projects .evidence-project-eyebrow {color:#aeadcb;font-size:9px;font-weight:750;letter-spacing:.11em;text-transform:uppercase;margin:0 0 6px}
+#projects .evidence-project h2 {font-size:19px;letter-spacing:-.03em;line-height:1.25;color:#fff;margin:0 0 6px;font-weight:850}
+#projects .evidence-project>p:last-child {font-size:11px;color:#cbc9e5;line-height:1.5;margin:0}
+#projects .evidence-skill-head {display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--yellow);font-size:10px;font-weight:900;letter-spacing:.1em;padding:0 0 11px;border-bottom:1px solid rgba(255,255,255,.22)}
+#projects .evidence-skill-number {color:#c5c3de;letter-spacing:0;font-size:10px;font-weight:600}
+#projects .evidence-skills {display:grid;gap:0;list-style:none;padding:4px 0 5px;margin:0 0 15px;flex:1}
+#projects .skill-item {display:flex;align-items:start;gap:10px;padding:10px 0 9px;border-bottom:1px solid rgba(255,255,255,.08);border-radius:5px}
+#projects .skill-item:last-child {border-bottom:0}
+#projects .skill-tick {font-size:10px;color:var(--yellow);font-weight:900;line-height:1.7;min-width:19px;font-variant-numeric:tabular-nums}
+#projects .skill-item strong {display:block;color:#fff;font-size:12px;font-weight:840;line-height:1.28;margin-bottom:3px}
+#projects .skill-item div>span {display:block;color:#d0cee7;font-size:10.5px;line-height:1.5}
+#projects .evidence-grid.is-filtered .skill-item.is-match {background:rgba(250,255,0,.065);padding-left:7px;margin-left:-7px}
+#projects .evidence-grid.is-filtered .skill-item.is-match strong {color:var(--yellow)}
+#projects .evidence-card-bottom {display:flex;justify-content:space-between;align-items:end;gap:10px;padding-top:15px;border-top:1px solid rgba(255,255,255,.23)}
+#projects .evidence-impact {display:flex;flex-direction:column;gap:5px;max-width:67%}
+#projects .evidence-impact strong {color:var(--yellow);font-weight:900;font-size:clamp(15px,1.45vw,21px);letter-spacing:-.04em;line-height:1.05}
+#projects .evidence-impact span {color:#f0edfb;font-size:10px;line-height:1.45}
+#projects .evidence-card .learn {margin:0;align-self:end;flex-shrink:0;height:32px;font-size:9px;display:inline-flex;align-items:center;text-decoration:none;padding:0 0 0 11px;gap:8px}
+#projects .evidence-card .learn-circle {width:32px;height:32px}
+#projects .projects-chronology-note {color:#a9a7c6;font-size:11px;line-height:1.8;margin:26px 0 0}
+/* About layout: reduce unnecessary empty space below the sticky navigation. */
+@media(min-width:1081px) and (min-height:820px) {
+  body.home-active #about .hero-inner.home-grid {align-items:start!important;padding-top:clamp(37px,6vh,60px)!important}
+}
+@media(min-width:1081px) and (min-height:620px) and (max-height:819px) {
+  body.home-active #about .hero-inner.home-grid {transform:translateY(-20px)}
+}
+/* Startup marks: two DISTINCT logo slots. Stop previous scale-overflow collisions. */
+#about .home-stat-logos.home-startup-logos {
+  display:grid!important;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)!important;
+  column-gap:clamp(17px,1.6vw,28px)!important;
+  width:min(100%,235px)!important;max-width:235px!important;margin-inline:auto;
+  align-items:center!important;justify-content:center!important;height:57px!important;overflow:visible;
+}
+#about .home-stat-logos.home-startup-logos .logo-slot {
+  width:100%!important;max-width:100%!important;min-width:0!important;height:53px!important;
+  overflow:hidden;position:relative;display:flex!important;align-items:center!important;justify-content:center!important;
+}
+#about .home-stat-logos.home-startup-logos .logo-slot img {
+  display:block;max-width:100%!important;max-height:100%!important;width:100%!important;height:100%!important;
+  object-fit:contain!important;transform:none!important;transform-origin:center!important;
+}
+#about .home-stat-logos.home-startup-logos .logo-slot:not(.has-image) img {display:none}
+#about .home-stat-logos.home-startup-logos .logo-slot[data-logo="ellemuel"] img {transform:scale(1.48)!important}
+#about .home-startup-logos .logo-placeholder {font-size:9px!important;overflow-wrap:anywhere}
+#about .hero-cta {justify-content:flex-start!important; transform: translateY(25px)!important}
+#about .hero-cta .pill-link {min-width:245px;font-size:12px}
+@media(max-width:1100px){#projects .evidence-grid{gap:17px}#projects .evidence-card{padding:20px 19px}#projects .skill-item div>span{font-size:10px}}
+@media(max-width:780px){#projects .evidence-grid{grid-template-columns:1fr}#projects .projects-intro-aside{display:none}#projects .projects-meta{align-items:start;flex-direction:column}#projects .projects-intro{margin-bottom:24px}#projects .evidence-card{min-height:auto}}
+@media(max-width:600px){#projects .unified-projects{padding:28px 18px 70px}#projects .expertise-heading{display:block}#projects .expertise-heading span:last-child{display:block;margin-top:6px}#projects .expertise-filter{font-size:10px;padding:9px 12px}#projects .evidence-card{padding:18px 19px}#projects .evidence-card-bottom{flex-wrap:wrap}#projects .evidence-impact{max-width:100%}#projects .evidence-card .learn{margin-left:auto}#about .home-stat-logos.home-startup-logos{column-gap:9px!important;max-width:130px!important;height:38px!important}#about .home-stat-logos.home-startup-logos .logo-slot{height:37px!important}#about .home-stat-logos.home-startup-logos .logo-slot[data-logo="ellemuel"] img{transform:scale(1.40)!important}}
+
+/* =============================================================
+   RECRUITER PORTFOLIO — COMPACT SKILL-TAG PROJECT CARDS
+   Keep the established navy / purple / neon yellow identity.
+   ============================================================= */
+#projects .unified-projects{max-width:1430px;padding-top:clamp(22px,3vw,38px)}
+#projects .projects-intro{margin-bottom:23px;align-items:center}
+#projects .projects-intro h1{font-size:clamp(26px,2.8vw,39px);line-height:1.1;letter-spacing:-.045em;margin-bottom:9px}
+#projects .projects-intro p:not(.projects-kicker){font-size:12px;line-height:1.6;max-width:720px}
+#projects .projects-intro-aside strong{font-size:33px}
+#projects .expertise{padding:17px 0 18px}
+#projects .expertise-filter{padding:9px 13px;font-size:10.5px}
+#projects .projects-meta{margin:18px 0 14px}
+#projects .evidence-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:19px}
+#projects .evidence-card{min-height:325px;padding:19px 22px 18px;border-radius:13px;box-shadow:0 12px 24px rgba(0,0,18,.12)}
+#projects .evidence-logo{flex-basis:64px;width:64px;max-width:64px;height:26px}
+#projects .evidence-period{font-size:12px;line-height:1.1;letter-spacing:.08em;margin-bottom:4px}
+#projects .evidence-organization{font-size:9px;line-height:1.3}
+#projects .evidence-project{margin:12px 0 12px}
+#projects .evidence-project-eyebrow{color:var(--yellow);font-size:9px;letter-spacing:.07em;font-weight:850;margin-bottom:7px}
+#projects .evidence-project h2{font-size:clamp(17px,1.38vw,21px);line-height:1.14;letter-spacing:-.025em;margin-bottom:9px}
+#projects .evidence-project>p:last-child{font-size:11px;line-height:1.5;color:#d4d1e8}
+#projects .evidence-skill-head{font-size:9px;padding:0;border:0;margin:1px 0 10px;letter-spacing:.1em}
+#projects .evidence-skills.skill-tags{display:flex;align-items:flex-start;align-content:flex-start;flex-wrap:wrap;gap:7px;padding:0;margin:0 0 19px;list-style:none;flex:0 0 auto}
+#projects .skill-tag{display:inline-flex;align-items:center;font-weight:750;font-size:10px;line-height:1.35;min-height:25px;border-radius:5px;padding:5px 9px;color:#f5f3ff;background:rgba(13,11,66,.45);border:1px solid rgba(250,255,0,.37)}
+#projects .evidence-grid.is-filtered .skill-tag.is-match{background:var(--yellow);border-color:var(--yellow);color:var(--navy)}
+#projects .evidence-card-bottom{margin-top:auto;padding-top:12px;gap:7px}
+#projects .evidence-impact{gap:4px;max-width:60%}
+#projects .evidence-impact strong{font-size:clamp(14px,1.23vw,18px)}
+#projects .evidence-impact span{font-size:10px;line-height:1.3}
+#projects .evidence-card .learn{height:30px;padding-left:9px;font-size:8px;gap:6px}
+#projects .evidence-card .learn-circle{height:30px;width:30px;font-size:16px}
+#projects .evidence-card:last-child:not([hidden]){grid-column:2}
+#projects .evidence-grid.is-filtered .evidence-card:last-child{grid-column:auto}
+#about .home-metrics-education .logo-slot[data-logo="trent"]{width:min(100%,95px);max-width:95px;height:34px}
+#about .home-metrics-education .logo-slot[data-logo="westernSydney"]{width:min(100%,110px);max-width:110px;height:34px}
+#about .home-metrics-experience .logo-slot[data-logo="siemens"]{width:min(100%,80px);max-width:80px;height:32px}
+#about .home-metrics-experience .logo-slot[data-logo="ami"]{width:min(100%,50px);max-width:50px;height:34px}
+#about .home-stat-logos.home-startup-logos{width:min(100%,290px)!important;max-width:290px!important;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)!important;column-gap:16px!important}
+#about .home-stat-logos.home-startup-logos .logo-slot[data-logo="mantahq"] {width: 100% !important;max-width: 140px !important;overflow: visible !important;}
+#about .home-stat-logos.home-startup-logos .logo-slot[data-logo="mantahq"] img{transform:scale(1.10)!important}
+#about .home-stat-logos.home-startup-logos .logo-slot[data-logo="ellemuel"] img{transform:scale(2.1)!important}
+@media(max-width:1180px){
+ #projects .evidence-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #projects .evidence-card:last-child:not([hidden]){grid-column:auto}
+ #projects .evidence-card{min-height:310px}
+}
+@media(max-width:780px){
+ #projects .evidence-grid{grid-template-columns:1fr}
+ #projects .evidence-card{min-height:0}
+ #projects .projects-intro h1{font-size:clamp(27px,6vw,36px)}
+}
+@media(max-width:600px){
+ #projects .evidence-grid{gap:14px}
+ #projects .evidence-card{padding:19px 20px;min-height:310px}
+ #projects .evidence-project h2{font-size:20px}
+ #projects .evidence-skills.skill-tags{gap:6px}
+ #projects .skill-tag{font-size:9.5px;padding:5px 7px}
+ #about .home-metrics-education .logo-slot[data-logo="trent"]{width:min(100%,83px);max-width:83px;height:27px}
+ #about .home-metrics-education .logo-slot[data-logo="westernSydney"]{width:min(100%,83px);max-width:83px;height:27px}
+ #about .home-metrics-experience .logo-slot[data-logo="siemens"]{width:min(100%,60px);max-width:60px;height:22px}
+ #about .home-metrics-experience .logo-slot[data-logo="ami"]{width:min(100%,45px);max-width:45px;height:23px}
+ #about .home-stat-logos.home-startup-logos{width:min(100%,158px)!important;max-width:158px!important;column-gap:12px!important;height:40px!important}
+ #about .home-stat-logos.home-startup-logos .logo-slot{height:40px!important}
+ #about .home-stat-logos.home-startup-logos .logo-slot[data-logo="mantahq"] img{transform:scale(1.20)!important}
+ #about .home-stat-logos.home-startup-logos .logo-slot[data-logo="ellemuel"] img{transform:scale(1.68)!important}
+}
+/* Final density tuning: close to the original ~300px portfolio tiles. */
+#projects .evidence-card{padding:16px 20px 15px;min-height:312px}
+#projects .evidence-project{margin:9px 0 9px}
+#projects .evidence-project h2{font-size:clamp(17px,1.35vw,20px);margin-bottom:7px}
+#projects .evidence-skill-head{margin-bottom:7px}
+#projects .evidence-skills.skill-tags{gap:6px;margin-bottom:11px}
+#projects .skill-tag{min-height:23px;padding:4px 8px}
+#projects .evidence-card-bottom{padding-top:10px}
+@media(max-width:600px){#projects .evidence-card{min-height:0;padding:18px 19px}}
+
+
+/* =================================================================
+   NOV 06 — HERO SPACING REFINEMENT (user-approved direction)
+   Wider left column + closer two-column composition; lift the
+   education/experience cluster without shifting tablet/mobile.
+   ================================================================= */
+@media (min-width:1081px) and (min-height:620px) {
+  #about .home-profile-panel {
+    transform: translateY(-25px);
+  }
+  /* The CTA should not sit lower than the introductory content. */
+  #about .hero-cta {
+    transform: translateY(7px) !important;
+  }
+}
+/* Keep the left narrative and right credentials stacked on tablets/phones.
+   The older desktop grid override otherwise persists below 1081px. */
+@media (max-width:1080px) {
+  #about .hero-inner.home-grid {
+    grid-template-columns: minmax(0,1fr);
+    gap: clamp(36px,5vw,54px);
+  }
+  #about .home-profile-panel {
+    transform: none;
+  }
+}
+
+/* PROJECT CHRONOLOGY: year sections only when All Projects is selected.
+   Filtered results revert to one compact, uninterrupted card grid. */
+#projects .evidence-grid:not(.is-filtered) {
+  display:flex;
+  flex-direction:column;
+  gap:clamp(30px,3.7vw,49px);
+}
+#projects .project-year-group { min-width:0; }
+#projects .project-year-heading {
+  display:flex;
+  align-items:center;
+  gap:clamp(12px,1.8vw,25px);
+  margin:0 0 17px;
+}
+#projects .project-year-heading h2 {
+  font-size:clamp(20px,2vw,28px);
+  font-weight:850;
+  line-height:1.15;
+  letter-spacing:-.04em;
+  margin:0;
+  color:var(--yellow);
+  white-space:nowrap;
+}
+#projects .project-year-line {
+  height:1px;
+  min-width:20px;
+  flex:1;
+  background:rgba(250,255,0,.44);
+}
+#projects .project-year-count {
+  white-space:nowrap;
+  color:#cbc9e4;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.09em;
+}
+#projects .year-project-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:19px;
+}
+/* Override the old rule that centered the last card of the seven-card grid. */
+#projects .year-project-grid > .evidence-card:last-child:not([hidden]) { grid-column:auto; }
+#projects .evidence-grid.is-filtered {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:19px;
+}
+#projects .evidence-grid.is-filtered .project-year-group,
+#projects .evidence-grid.is-filtered .year-project-grid { display:contents; }
+#projects .evidence-grid.is-filtered .project-year-heading { display:none; }
+#projects .evidence-grid.is-filtered ~ .projects-chronology-note { display:none; }
+#projects .evidence-grid.is-filtered .evidence-card { grid-column:auto; }
+@media(max-width:1180px){
+  #projects .year-project-grid,
+  #projects .evidence-grid.is-filtered {grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+}
+@media(max-width:780px){
+  #projects .year-project-grid,
+  #projects .evidence-grid.is-filtered {grid-template-columns:minmax(0,1fr);gap:14px}
+  #projects .project-year-heading{margin-bottom:14px}
+  #projects .project-year-count{font-size:9px;letter-spacing:.04em}
+}
+
+
+/* Ten-project layout: let each year wrap naturally, including the fifth 2026 project. */
+#projects .year-project-grid > .evidence-card {grid-column:auto}
+#projects .evidence-grid.is-filtered .evidence-card {grid-column:auto!important}
 </style>
 </head>
 <body>
 <header class="site-header">
-  <nav class="nav" aria-label="Main navigation">
-    <div class="nav-links">
-      <a class="nav-tab active" href="#about" data-tab="about" aria-current="page">About Me</a>
-      <a class="nav-tab" href="#business" data-tab="business">Me in Business</a>
-      <a class="nav-tab" href="#data" data-tab="data">Me in Data Analytics</a>
-    </div>
-  </nav>
+<nav aria-label="Main navigation" class="nav">
+<div class="nav-links">
+<a aria-current="page" class="nav-tab active" data-tab="about" href="#about">About Me</a>
+<a class="nav-tab" data-tab="projects" href="#projects">Projects</a>
+</div>
+</nav>
 </header>
 <main>
-  <section id="about" class="about-page tab-page" aria-labelledby="home-title">
-    <div class="hero">
-      <!-- The portrait remains your original assets/portrait.png. -->
-      <img class="hero-portrait" src="assets/portrait.png" alt="Daxton Huynh" onerror="this.classList.add('is-missing')" />
-      <div class="hero-portrait-note">Portrait placeholder<br/>Replace the image at <strong>assets/portrait.png</strong></div>
-      <div class="hero-inner"><div class="hero-left">
-        <p class="hero-heading">My name is</p>
-        <h1 id="home-title">DAXTON HUYNH</h1>
-        <p class="manifesto">I speak business. I think in data. I build solutions.</p>
-        <p class="story">From boardroom strategies to startup realities, I've learned that great ideas mean little without execution. I connect business intuition with analytical thinking to turn complexity into clarity and insights into impact.</p>
-        <div class="highlights" aria-label="Career and education highlights">
-          <div class="stats-row">
-            <div class="metric"><strong>~4</strong><span class="unit">Years</span><small>in a global corporate</small><span class="small-rule"></span><span class="org org-logo"><span class="logo-slot" data-logo="siemens"><img alt="SIEMENS logo" /><span class="logo-placeholder">SIEMENS</span></span></span></div>
-            <div class="metric"><strong>1.5+</strong><span class="unit">Years</span><small>leading a startup</small><span class="small-rule"></span><span class="org org-logo"><span class="logo-slot" data-logo="ami"><img alt="AMI logo" /><span class="logo-placeholder">AMI</span></span></span></div>
-            <div class="metric"><strong>1+</strong><span class="unit">Year</span><small>in Canadian local startups</small><span class="small-rule"></span><span class="org org-local"><span class="startup-logos"><span class="logo-slot" data-logo="mantahq"><img alt="MantaHQ logo" /><span class="logo-placeholder">MantaHQ</span></span><span class="logo-slot" data-logo="ellemuel"><img alt="ElLemuel logo" /><span class="logo-placeholder">ElLemuel</span></span></span></span></div>
-          </div>
-          <div class="stats-row education">
-            <div class="metric degree"><strong>MBA</strong><span class="small-rule"></span><span class="school school-logo"><span class="logo-slot" data-logo="westernSydney"><img alt="Western Sydney University logo" /><span class="logo-placeholder">Western Sydney University</span></span></span></div>
-            <div class="metric degree"><strong class="degree-label">MSc Big Data Analytics</strong><span class="small-rule"></span><span class="school school-logo"><span class="logo-slot" data-logo="trent"><img alt="Trent University logo" /><span class="logo-placeholder">Trent University</span></span></span></div>
-          </div>
-        </div>
-        <div class="hero-cta">
-          <a class="pill-link" href="#business">Me in Business <span class="arrow" aria-hidden="true">→</span></a>
-          <a class="pill-link" href="#data">Me in Data Analytics <span class="arrow" aria-hidden="true">→</span></a>
-        </div>
-      </div></div>
-    </div>
-  </section>
-  <div id="business" class="tab-page" hidden>
-    <section class="business-dashboard" aria-labelledby="business-title">
-      <div class="business-intro">
-        <div class="business-intro-title">
-          <p class="business-kicker">REAL-WORLD IMPACT</p>
-          <h1 id="business-title">Me in <span>Business.</span></h1>
-        </div>
-        <p class="business-intro-copy">Strategies, systems, and operations — real projects, practical solutions, and measurable impact.</p>
-      </div>
-      <div class="business-grid-heading"><h2>Key projects</h2><span class="business-heading-rule" aria-hidden="true"></span><span class="business-count">05 PROJECTS</span></div>
-      <div class="business-project-grid" aria-label="Five business case studies">
-        <article class="project-card" aria-labelledby="business-case-01">
-          <div class="business-card-header">
-            <div class="business-card-overline"><span class="business-card-index">01</span><span class="business-card-company">AMI EDUCATION</span></div>
-            <span class="business-card-brand"><span class="logo-slot" data-logo="ami"><img alt="AMI EDUCATION logo" /><span class="logo-placeholder">AMI EDUCATION</span></span></span>
-          </div>
-          <div class="business-card-content">
-            <p class="business-card-category">Growth & Operations</p>
-            <h3 class="business-card-title" id="business-case-01">#GO2025 Initiative<span>Zero-Cost Growth Strategy</span></h3>
-            <p class="business-card-description">Aligned partnerships, community marketing and academic delivery to build a path to profitability.</p>
-          </div>
-          <div class="business-card-bottom">
-            <div class="business-card-impact"><strong>3 MONTHS EARLY</strong><span>Monthly break-even achieved</span></div>
-            <a aria-label="Read the full GO2025 business case study" class="learn" href="projects/go2025/" style="text-decoration:none">LEARN MORE <span class="learn-circle" aria-hidden="true">↗</span></a>
-          </div>
-        </article>
-        <article class="project-card" aria-labelledby="business-case-02">
-          <div class="business-card-header">
-            <div class="business-card-overline"><span class="business-card-index">02</span><span class="business-card-company">AMI EDUCATION</span></div>
-            <span class="business-card-brand"><span class="logo-slot" data-logo="ami"><img alt="AMI EDUCATION logo" /><span class="logo-placeholder">AMI EDUCATION</span></span></span>
-          </div>
-          <div class="business-card-content">
-            <p class="business-card-category">Business Systems</p>
-            <h3 class="business-card-title" id="business-case-02">Zero-Cost<span>Operations System</span></h3>
-            <p class="business-card-description">Built connected Excel workflows across Sales, Academic, HR and Finance without paid software.</p>
-          </div>
-          <div class="business-card-bottom">
-            <div class="business-card-impact"><strong>70% REDUCTION</strong><span>Administrative workload</span></div>
-            <a aria-label="Read the full AMI Operations System case study" class="learn" href="projects/ami-operations/" style="text-decoration:none">LEARN MORE <span class="learn-circle" aria-hidden="true">↗</span></a>
-          </div>
-        </article>
-        <article class="project-card" aria-labelledby="business-case-03">
-          <div class="business-card-header">
-            <div class="business-card-overline"><span class="business-card-index">03</span><span class="business-card-company">SIEMENS VIETNAM</span></div>
-            <span class="business-card-brand"><span class="logo-slot" data-logo="siemens"><img alt="SIEMENS VIETNAM logo" /><span class="logo-placeholder">SIEMENS VIETNAM</span></span></span>
-          </div>
-          <div class="business-card-content">
-            <p class="business-card-category">Strategy & Sustainability</p>
-            <h3 class="business-card-title" id="business-case-03">Sustainability-Led<span>Business Growth</span></h3>
-            <p class="business-card-description">Turned regulatory and customer needs into industry-specific commercial opportunities.</p>
-          </div>
-          <div class="business-card-bottom">
-            <div class="business-card-impact"><strong>CAD 3.2M</strong><span>Project wins across the initiative</span></div>
-            <button aria-label="Learn more about Siemens Sustainability" class="learn" data-case="sustainability" type="button">LEARN MORE <span class="learn-circle" aria-hidden="true">↗</span></button>
-          </div>
-        </article>
-        <article class="project-card" aria-labelledby="business-case-04">
-          <div class="business-card-header">
-            <div class="business-card-overline"><span class="business-card-index">04</span><span class="business-card-company">SIEMENS VIETNAM</span></div>
-            <span class="business-card-brand"><span class="logo-slot" data-logo="siemens"><img alt="SIEMENS VIETNAM logo" /><span class="logo-placeholder">SIEMENS VIETNAM</span></span></span>
-          </div>
-          <div class="business-card-content">
-            <p class="business-card-category">Digital Transformation</p>
-            <h3 class="business-card-title" id="business-case-04">Go Digital!<span>B2B Distributors</span></h3>
-            <p class="business-card-description">Helped strategic partners align product data and launch digital commerce capabilities.</p>
-          </div>
-          <div class="business-card-bottom">
-            <div class="business-card-impact"><strong>80% IMPROVEMENT</strong><span>Sales data quality</span></div>
-            <button aria-label="Learn more about Go Digital B2B Distributors" class="learn" data-case="go-digital" type="button">LEARN MORE <span class="learn-circle" aria-hidden="true">↗</span></button>
-          </div>
-        </article>
-        <article class="project-card" aria-labelledby="business-case-05">
-          <div class="business-card-header">
-            <div class="business-card-overline"><span class="business-card-index">05</span><span class="business-card-company">SIEMENS VIETNAM</span></div>
-            <span class="business-card-brand"><span class="logo-slot" data-logo="siemens"><img alt="SIEMENS VIETNAM logo" /><span class="logo-placeholder">SIEMENS VIETNAM</span></span></span>
-          </div>
-          <div class="business-card-content">
-            <p class="business-card-category">Innovation & Communication</p>
-            <h3 class="business-card-title" id="business-case-05">Xcelerator<span>Pitch Competition</span></h3>
-            <p class="business-card-description">Made a complex technology proposition memorable through creative business storytelling.</p>
-          </div>
-          <div class="business-card-bottom">
-            <div class="business-card-impact"><strong>TOP 2</strong><span>ASEAN regional finals</span></div>
-            <button aria-label="Learn more about Xcelerator Pitch Competition" class="learn" data-case="xcelerator" type="button">LEARN MORE <span class="learn-circle" aria-hidden="true">↗</span></button>
-          </div>
-        </article>
-      </div>
-    </section>
-  </div>
-  <div id="data" class="tab-page" hidden>
-    <div class="page-intro"><p class="kicker">The analytical side</p><h1>Me in <span style="color:var(--yellow)">Data Analytics.</span></h1><p>My work at the intersection of business questions and analytical methods — connecting data preparation, modelling and interpretation with decisions that matter.</p></div>
-    <section class="data-section" aria-label="Data analytics projects">
-      <div class="data-grid">
-        <article class="data-card"><div class="data-visual" aria-hidden="true"><i style="--h:37%"></i><i style="--h:57%"></i><i style="--h:47%"></i><i style="--h:80%"></i><i style="--h:66%"></i><i style="--h:92%"></i></div><div class="data-content"><span class="data-tag">Forecasting · Sales Analytics</span><h2>FMCG Sales &amp; Demand Forecasting</h2><p>From historical sales patterns to SKU-level forecasting: evaluating methods and translating forecast errors into practical planning insights.</p><div class="stack">Python · SQL · Forecast evaluation</div><button type="button" class="data-action" data-data-case="fmcg">Explore approach →</button></div></article>
-        <article class="data-card"><div class="data-visual nlp" aria-hidden="true"><span>Service</span><span>Experience</span><span>Reviews</span><span>Insights</span></div><div class="data-content"><span class="data-tag">NLP · Customer Analytics</span><h2>Peterborough Restaurant Intelligence</h2><p>Exploring restaurant reviews to identify customer-experience themes and translate them into actionable recommendations for local businesses.</p><div class="stack">Python · NLP · BERTopic · Visualization</div><button type="button" class="data-action" data-data-case="restaurant">Explore approach →</button></div></article>
-        <article class="data-card"><div class="data-visual models" aria-hidden="true"><b>DATA.</b></div><div class="data-content"><span class="data-tag">MSc Portfolio</span><h2>More Analytics Projects</h2><p>Additional academic work in data analysis, modelling and visualization will be featured here as each project is prepared for publication.</p><div class="stack">Analytics · Modelling · Data storytelling</div><span class="data-action data-coming">More projects coming soon</span></div></article>
-      </div>
-    </section>
-  </div>
-</main>
-<footer class="site-footer"><small>© 2026 Daxton Huynh · Business meets Data<br/>Strategy · Operations · Analytics · Systems</small><a href="https://github.com/daxtonhuynhpq" target="_blank" rel="noopener noreferrer">MY GITHUB ↗</a></footer>
-<dialog aria-labelledby="modal-title" class="project-dialog" id="project-dialog">
-<div class="dialog-top"><small>BUSINESS CASE STUDY</small><button aria-label="Close project details" class="close-dialog" id="close-dialog" type="button">×</button></div>
-<div class="dialog-body">
-<h2 id="modal-title"></h2>
-<p id="modal-description"></p>
-<h3>PROJECT HIGHLIGHTS</h3>
-<ul id="modal-highlights"></ul>
-<h3>BUSINESS IMPACT</h3>
-<div class="dialog-impact" id="modal-impact"></div>
-<a class="dialog-link" href="#" id="modal-link">EXPLORE FULL CASE STUDY ↗</a>
-<p class="dialog-note" id="modal-note"></p>
+<section aria-labelledby="home-title" class="about-page tab-page" id="about">
+<div class="hero">
+<div class="hero-inner home-grid">
+<div class="hero-left home-intro">
+<p class="home-hello">My name is</p>
+<h1 id="home-title">DAXTON <span>HUYNH.</span></h1>
+<div aria-hidden="true" class="home-intro-rule"></div>
+<div class="home-bio">
+<p>I bridge the gap between <strong>complex data analytics</strong> and <strong>strategic business decisions.</strong> Specializing in <strong>business systems design, process improvement, strategic planning, </strong> and <strong> commercial forecasting,</strong> <br> I leverage data-driven insights to streamline workflows and empower team decision-making.</p>
+<p class="home-toolkit"><strong>Core Toolkit:</strong> Excel, Salesforce, SQL, Python &amp; Power BI</p>
 </div>
-</dialog>
+<div class="hero-cta">
+<a class="pill-link" href="#projects">Explore my Projects <span aria-hidden="true" class="arrow">→</span></a>
+</div>
+</div>
+<aside aria-label="Professional experience and education" class="home-profile-panel">
+<div class="home-education-section">
+<div class="home-metrics home-metrics-education">
+<div class="home-stat home-stat-degree home-stat-degree-msc">
+<h2><span class="degree-prefix">Master of</span><span class="degree-field">Big Data Analytics</span></h2>
+<span aria-hidden="true" class="home-stat-rule"></span>
+<div class="home-stat-logos"><span class="logo-slot" data-logo="trent"><img alt="Trent University logo"/><span class="logo-placeholder">Trent University</span></span></div>
+</div><div class="home-stat home-stat-degree home-stat-degree-mba">
+<h2><span class="degree-prefix">Master of</span><span class="degree-field">Business Administration</span></h2>
+<span aria-hidden="true" class="home-stat-rule"></span>
+<div class="home-stat-logos"><span class="logo-slot" data-logo="westernSydney"><img alt="Western Sydney University logo"/><span class="logo-placeholder">Western Sydney University</span></span></div>
+</div></div>
+</div><div class="home-experience-section"><div class="home-metrics home-metrics-experience">
+<div class="home-stat">
+<div class="home-stat-figure"><strong>1+</strong><span>Year</span></div>
+<p class="home-stat-caption">in Canadian startups</p>
+<span aria-hidden="true" class="home-stat-rule"></span>
+<div class="home-stat-logos home-startup-logos">
+<span class="logo-slot" data-logo="mantahq"><img alt="MantaHQ logo"/><span class="logo-placeholder">MantaHQ</span></span>
+<span class="logo-slot" data-logo="ellemuel"><img alt="ElLemuel logo"/><span class="logo-placeholder">ElLemuel</span></span>
+</div>
+</div><div class="home-stat">
+<div class="home-stat-figure"><strong>~4</strong><span>Years</span></div>
+<p class="home-stat-caption">in a global corporate</p>
+<span aria-hidden="true" class="home-stat-rule"></span>
+<div class="home-stat-logos"><span class="logo-slot" data-logo="siemens"><img alt="Siemens logo"/><span class="logo-placeholder">SIEMENS</span></span></div>
+</div><div class="home-stat">
+<div class="home-stat-figure"><strong>1.5+</strong><span>Years</span></div>
+<p class="home-stat-caption">leading a startup</p>
+<span aria-hidden="true" class="home-stat-rule"></span>
+<div class="home-stat-logos"><span class="logo-slot" data-logo="ami"><img alt="AMI Education logo"/><span class="logo-placeholder">AMI EDUCATION</span></span></div>
+</div></div></div></aside>
+</div>
+</div>
+</section>
+<section aria-labelledby="projects-title" class="tab-page" hidden="" id="projects">
+<div class="unified-projects">
+<header class="projects-intro"><div><h1 id="projects-title">Skills in <span>Action.</span></h1><p>Hands-on projects connecting business challenges, practical skills and measurable outcomes.</p></div>
+<aside class="projects-intro-aside"><strong>10</strong><span>PROJECT CASE STUDIES</span><small>Newest first · business + data together</small></aside></header>
+<section aria-label="Filter projects by expertise area" class="expertise"><div class="expertise-heading"><span>FILTER BY EXPERTISE</span><span>Choose one area · A project may match multiple</span></div>
+<div aria-label="Project expertise areas" class="expertise-filters" role="group"><button aria-pressed="true" class="expertise-filter is-active" data-filter="all" type="button">All Projects</button><button aria-pressed="false" class="expertise-filter" data-filter="systems" type="button">Business Systems &amp; Automation</button>
+<button aria-pressed="false" class="expertise-filter" data-filter="sales" type="button">Sales Operations &amp; CRM</button>
+<button aria-pressed="false" class="expertise-filter" data-filter="analytics" type="button">Data Analytics &amp; Reporting</button>
+<button aria-pressed="false" class="expertise-filter" data-filter="strategy" type="button">Business Strategy &amp; Growth</button>
+<button aria-pressed="false" class="expertise-filter" data-filter="ai" type="button">AI &amp; Decision Modeling</button></div>
+</section>
+<div class="projects-meta"><p aria-live="polite" id="projects-count" role="status">Showing all 10 projects</p><span id="projects-sort-note">Grouped by year · newest first</span></div>
+<div class="evidence-grid" id="evidence-grid">
+<section class="project-year-group" aria-labelledby="project-year-2026" data-period="2026">
+  <div class="project-year-heading">
+    <h2 id="project-year-2026">2026</h2>
+    <span class="project-year-line" aria-hidden="true"></span>
+    <span class="project-year-count">5 PROJECTS</span>
+  </div>
+  <div class="year-project-grid">
+        <!-- 2026 / NEW: Trent University · Innovation Startup Pitch -->
+    <article aria-labelledby="case-title-cafe" class="evidence-card" data-areas="strategy" id="case-cafe">
+      <div class="evidence-card-head">
+        <div><p class="evidence-period">01</p><p class="evidence-organization">TRENT UNIVERSITY</p></div>
+        <span class="evidence-logo logo-slot" data-logo="trent"><img alt="Trent University logo"/><span class="logo-placeholder">TRENT UNIVERSITY</span></span>
+      </div>
+      <div class="evidence-project">
+        <p class="evidence-project-eyebrow">AGRI-FOOD INNOVATION · STARTUP STRATEGY</p>
+        <h2 id="case-title-cafe">CAFÉ — Agri-Food Startup Strategy</h2>
+        <p>Turned a food-system challenge into a testable food-box concept with pricing, operations and a go-to-market plan.</p>
+      </div>
+      <div class="evidence-skill-head"><span>SKILLS &amp; TOOLS</span></div>
+      <ul aria-label="Key skills demonstrated in this project" class="evidence-skills skill-tags">
+        <li class="skill-tag" data-skill-areas="strategy">Go-to-Market Strategy</li>
+        <li class="skill-tag" data-skill-areas="strategy">Customer Segmentation</li>
+        <li class="skill-tag" data-skill-areas="strategy">Pricing &amp; Unit Economics</li>
+        <li class="skill-tag" data-skill-areas="strategy">Financial Forecasting</li>
+        <li class="skill-tag" data-skill-areas="strategy">Operating Model Design</li>
+        <li class="skill-tag" data-skill-areas="strategy">Supply Chain Planning</li>
+        <li class="skill-tag" data-skill-areas="strategy">Pilot &amp; Validation Design</li>
+      </ul>
+      <div class="evidence-card-bottom"><div class="evidence-impact"><strong>2ND PLACE</strong><span>Agriculture stream · 2026 innovation startup pitch</span></div>
+        <a aria-label="Read full case study: CAFÉ Agri-Food Startup Strategy" class="learn" href="case-studies/cafe/index.html">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
+    </article>
+    <!-- 2026 / NEW: Trent University · Forecasting and operations analytics -->
+    <article aria-labelledby="case-title-fmcg" class="evidence-card" data-areas="systems sales analytics" id="case-fmcg">
+      <div class="evidence-card-head">
+        <div><p class="evidence-period">02</p><p class="evidence-organization">TRENT UNIVERSITY</p></div>
+        <span class="evidence-logo logo-slot" data-logo="trent"><img alt="Trent University logo"/><span class="logo-placeholder">TRENT UNIVERSITY</span></span>
+      </div>
+      <div class="evidence-project">
+        <p class="evidence-project-eyebrow">DEMAND FORECASTING · INVENTORY OPTIMIZATION</p>
+        <h2 id="case-title-fmcg">Beyond Forecast Accuracy</h2>
+        <p>Audited forecast leakage and built a cost-aware demand planning system linking predictions to inventory decisions.</p>
+      </div>
+      <div class="evidence-skill-head"><span>SKILLS &amp; TOOLS</span></div>
+      <ul aria-label="Key skills demonstrated in this project" class="evidence-skills skill-tags">
+        <li class="skill-tag" data-skill-areas="analytics">Python &amp; scikit-learn</li>
+        <li class="skill-tag" data-skill-areas="systems analytics">SQL · DuckDB</li>
+        <li class="skill-tag" data-skill-areas="sales analytics">Demand Forecasting</li>
+        <li class="skill-tag" data-skill-areas="analytics">Data Leakage Auditing</li>
+        <li class="skill-tag" data-skill-areas="analytics">Rolling-Origin Validation</li>
+        <li class="skill-tag" data-skill-areas="systems analytics">Inventory Simulation</li>
+        <li class="skill-tag" data-skill-areas="systems analytics">Cost-Based Optimization</li>
+        <li class="skill-tag" data-skill-areas="analytics">Power BI &amp; ECharts</li>
+      </ul>
+      <div class="evidence-card-bottom"><div class="evidence-impact"><strong>4.7% LOWER COST</strong><span>Simulated inventory-policy cost vs. a uniform 95% target</span></div>
+        <a aria-label="Read full case study: Beyond Forecast Accuracy" class="learn" href="https://daxtonhuynh.github.io/fmcg-demand-forecasting/">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
+    </article>
+    <!-- 2026 / NEW: Trent University · Text analytics -->
+    <article aria-labelledby="case-title-reviews" class="evidence-card" data-areas="analytics ai" id="case-reviews">
+      <div class="evidence-card-head">
+        <div><p class="evidence-period">03</p><p class="evidence-organization">TRENT UNIVERSITY</p></div>
+        <span class="evidence-logo logo-slot" data-logo="trent"><img alt="Trent University logo"/><span class="logo-placeholder">TRENT UNIVERSITY</span></span>
+      </div>
+      <div class="evidence-project">
+        <p class="evidence-project-eyebrow">CUSTOMER INSIGHTS · TEXT ANALYTICS</p>
+        <h2 id="case-title-reviews">Beyond the Stars</h2>
+        <p>Extracted customer-experience signals beyond star ratings from Google reviews of Peterborough restaurants.</p>
+      </div>
+      <div class="evidence-skill-head"><span>SKILLS &amp; TOOLS</span></div>
+      <ul aria-label="Key skills demonstrated in this project" class="evidence-skills skill-tags">
+        <li class="skill-tag" data-skill-areas="analytics ai">Python · NLP</li>
+        <li class="skill-tag" data-skill-areas="analytics ai">BERTopic</li>
+        <li class="skill-tag" data-skill-areas="analytics ai">Aspect-Based Sentiment Analysis</li>
+        <li class="skill-tag" data-skill-areas="analytics">Customer Review Mining</li>
+        <li class="skill-tag" data-skill-areas="analytics">Statistical Analysis</li>
+        <li class="skill-tag" data-skill-areas="analytics">Restaurant Peer Benchmarking</li>
+        <li class="skill-tag" data-skill-areas="analytics">Business Insight Reporting</li>
+      </ul>
+      <div class="evidence-card-bottom"><div class="evidence-impact"><strong>7,073 REVIEWS</strong><span>Customer-experience analysis across 25 restaurants</span></div>
+        <a aria-label="Read full case study: Beyond the Stars" class="learn" href="https://daxtonhuynh.github.io/peterborough-restaurant-reviews/">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
+    </article>
+<article aria-labelledby="case-title-ami2" class="evidence-card" data-areas="systems analytics" id="case-ami2">
+<div class="evidence-card-head">
+<div><p class="evidence-period">04</p><p class="evidence-organization">AMI EDUCATION</p></div>
+<span class="evidence-logo logo-slot" data-logo="ami"><img alt="AMI EDUCATION logo"/><span class="logo-placeholder">AMI EDUCATION</span></span>
+</div>
+<div class="evidence-project"><p class="evidence-project-eyebrow">BUSINESS SYSTEMS · PHASE 2 · SQL-BACKED</p><h2 id="case-title-ami2">AMI Operations Platform</h2><p>Modernized AMI workflows into a centralized, role-based platform for operations and financial reporting.</p></div>
+<div class="evidence-skill-head"><span>SKILLS &amp; TOOLS</span></div>
+<ul aria-label="Key skills demonstrated in this project" class="evidence-skills skill-tags"><li class="skill-tag" data-skill-areas="systems analytics">SQL</li><li class="skill-tag" data-skill-areas="systems analytics">PostgreSQL</li><li class="skill-tag" data-skill-areas="systems analytics">Python</li><li class="skill-tag" data-skill-areas="systems">Streamlit</li><li class="skill-tag" data-skill-areas="systems analytics">Relational Data Modelling</li><li class="skill-tag" data-skill-areas="systems">Business Rules &amp; Controls</li><li class="skill-tag" data-skill-areas="analytics">Financial Reporting</li></ul>
+<div class="evidence-card-bottom"><div class="evidence-impact"><strong>70 AUTOMATED TESTS</strong><span>Reported business-rule tests in the Phase 2 case study</span></div>
+<a aria-label="Read full case study: AMI Operations Platform" class="learn" href="https://daxtonhuynh.github.io/ami-operations-platform/">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
+</article>
+    <article aria-labelledby="case-title-negotiation" class="evidence-card" data-areas="ai" id="case-negotiation">
+<div class="evidence-card-head">
+<div><p class="evidence-period">05</p><p class="evidence-organization">INDEPENDENT RESEARCH</p></div>
+<span class="evidence-logo logo-slot" data-logo="trent"><img alt="INDEPENDENT RESEARCH logo"/><span class="logo-placeholder">INDEPENDENT RESEARCH</span></span>
+</div>
+<div class="evidence-project"><p class="evidence-project-eyebrow">AI &amp; DECISION SCIENCE</p><h2 id="case-title-negotiation">AI for Merger Negotiation</h2><p>Modelled M&amp;A negotiation decisions and evaluated search efficiency using Python.</p></div>
+<div class="evidence-skill-head"><span>SKILLS &amp; TOOLS</span></div>
+<ul aria-label="Key skills demonstrated in this project" class="evidence-skills skill-tags"><li class="skill-tag" data-skill-areas="ai">Python</li><li class="skill-tag" data-skill-areas="ai">Minimax Search</li><li class="skill-tag" data-skill-areas="ai">Alpha–Beta Pruning</li><li class="skill-tag" data-skill-areas="ai">Adversarial Modelling</li><li class="skill-tag" data-skill-areas="ai">Scenario Analysis</li></ul>
+<div class="evidence-card-bottom"><div class="evidence-impact"><strong>84.6% FEWER NODES</strong><span>Same decision value across 9 tested scenarios</span></div>
+<a aria-label="Read full case study: AI for Merger Negotiation" class="learn" href="https://daxtonhuynh.github.io/ai-for-merger-negotiation/">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
+</article>
+  </div>
+</section>
+<section class="project-year-group" aria-labelledby="project-year-2025" data-period="2025">
+  <div class="project-year-heading">
+    <h2 id="project-year-2025">2025</h2>
+    <span class="project-year-line" aria-hidden="true"></span>
+    <span class="project-year-count">2 PROJECTS</span>
+  </div>
+  <div class="year-project-grid">
+    <article aria-labelledby="case-title-go2025" class="evidence-card" data-areas="sales strategy" id="case-go2025">
+<div class="evidence-card-head">
+<div><p class="evidence-period">06</p><p class="evidence-organization">AMI EDUCATION</p></div>
+<span class="evidence-logo logo-slot" data-logo="ami"><img alt="AMI EDUCATION logo"/><span class="logo-placeholder">AMI EDUCATION</span></span>
+</div>
+<div class="evidence-project"><p class="evidence-project-eyebrow">GROWTH &amp; OPERATIONS</p><h2 id="case-title-go2025">#GO2025 Initiative</h2><p>Aligned partnerships, marketing and academic delivery to build a path to profitability.</p></div>
+<div class="evidence-skill-head"><span>SKILLS &amp; TOOLS</span></div>
+<ul aria-label="Key skills demonstrated in this project" class="evidence-skills skill-tags"><li class="skill-tag" data-skill-areas="strategy">Go-to-Market Planning</li><li class="skill-tag" data-skill-areas="sales">Lead Conversion Tracking</li><li class="skill-tag" data-skill-areas="sales strategy">Referral Marketing</li><li class="skill-tag" data-skill-areas="sales strategy">Partnership Development</li><li class="skill-tag" data-skill-areas="strategy">Cost Optimization</li><li class="skill-tag" data-skill-areas="strategy">Break-Even Analysis</li></ul>
+<div class="evidence-card-bottom"><div class="evidence-impact"><strong>3 MONTHS EARLY</strong><span>Monthly break-even milestone</span></div>
+<a aria-label="Read full case study: #GO2025 Initiative" class="learn" href="https://daxtonhuynh.github.io/business-projects/go2025/">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
+</article>
+    <article aria-labelledby="case-title-ami1" class="evidence-card" data-areas="systems sales analytics" id="case-ami1">
+<div class="evidence-card-head">
+<div><p class="evidence-period">07</p><p class="evidence-organization">AMI EDUCATION</p></div>
+<span class="evidence-logo logo-slot" data-logo="ami"><img alt="AMI EDUCATION logo"/><span class="logo-placeholder">AMI EDUCATION</span></span>
+</div>
+<div class="evidence-project"><p class="evidence-project-eyebrow">BUSINESS SYSTEMS · PHASE 1 · EXCEL-BASED</p><h2 id="case-title-ami1">Zero-Cost Operations System</h2><p>Designed zero-cost, integrated Excel workflows across Sales, Academic, Payroll and Finance.</p></div>
+<div class="evidence-skill-head"><span>SKILLS &amp; TOOLS</span></div>
+<ul aria-label="Key skills demonstrated in this project" class="evidence-skills skill-tags"><li class="skill-tag" data-skill-areas="systems">Excel Automation</li><li class="skill-tag" data-skill-areas="systems">Cross-Workbook Integration</li><li class="skill-tag" data-skill-areas="sales analytics">Enrollment &amp; Receivables</li><li class="skill-tag" data-skill-areas="systems">Payroll Automation</li><li class="skill-tag" data-skill-areas="analytics">Cash &amp; Accrual P&amp;L</li><li class="skill-tag" data-skill-areas="systems">Process Improvement</li></ul>
+<div class="evidence-card-bottom"><div class="evidence-impact"><strong>70% REDUCTION</strong><span>Administrative workload; 10% lower monthly staffing cost</span></div>
+<a aria-label="Read full case study: Zero-Cost Operations System" class="learn" href="https://daxtonhuynh.github.io/business-projects/ami-operations/">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
+</article>
+  </div>
+</section>
+<section class="project-year-group" aria-labelledby="project-year-siemens" data-period="2019–2024">
+  <div class="project-year-heading">
+    <h2 id="project-year-siemens">2022–2024</h2>
+    <span class="project-year-line" aria-hidden="true"></span>
+    <span class="project-year-count">3 PROJECTS</span>
+  </div>
+  <div class="year-project-grid">
+    <article aria-labelledby="case-title-digital" class="evidence-card" data-areas="systems sales strategy" id="case-digital">
+<div class="evidence-card-head">
+<div><p class="evidence-period">08</p><p class="evidence-organization">SIEMENS VIETNAM</p></div>
+<span class="evidence-logo logo-slot" data-logo="siemens"><img alt="SIEMENS VIETNAM logo"/><span class="logo-placeholder">SIEMENS VIETNAM</span></span>
+</div>
+<div class="evidence-project"><p class="evidence-project-eyebrow">DIGITAL TRANSFORMATION</p><h2 id="case-title-digital">Go Digital! B2B Distributors</h2><p>Helped distribution partners align product information and launch B2B commerce capabilities.</p></div>
+<div class="evidence-skill-head"><span>SKILLS &amp; TOOLS</span></div>
+<ul aria-label="Key skills demonstrated in this project" class="evidence-skills skill-tags"><li class="skill-tag" data-skill-areas="sales strategy">Partner Enablement</li><li class="skill-tag" data-skill-areas="systems sales">Product Data Governance</li><li class="skill-tag" data-skill-areas="sales strategy">B2B E-Commerce</li><li class="skill-tag" data-skill-areas="sales">Channel Operations</li><li class="skill-tag" data-skill-areas="systems sales">Data Quality Improvement</li><li class="skill-tag" data-skill-areas="systems">Requirements Coordination</li></ul>
+<div class="evidence-card-bottom"><div class="evidence-impact"><strong>80% IMPROVEMENT</strong><span>Reported sales data quality</span></div>
+<a aria-label="Read full case study: Go Digital! B2B Distributors" class="learn" href="https://daxtonhuynh.github.io/business-projects/go-digital/">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
+</article>
+    <article aria-labelledby="case-title-sustainability" class="evidence-card" data-areas="strategy sales" id="case-sustainability">
+<div class="evidence-card-head">
+<div><p class="evidence-period">09</p><p class="evidence-organization">SIEMENS VIETNAM</p></div>
+<span class="evidence-logo logo-slot" data-logo="siemens"><img alt="SIEMENS VIETNAM logo"/><span class="logo-placeholder">SIEMENS VIETNAM</span></span>
+</div>
+<div class="evidence-project"><p class="evidence-project-eyebrow">STRATEGY &amp; SUSTAINABILITY</p><h2 id="case-title-sustainability">Sustainability-Led Business Growth</h2><p>Translated regulatory and customer needs into industry-specific commercial opportunities.</p></div>
+<div class="evidence-skill-head"><span>SKILLS &amp; TOOLS</span></div>
+<ul aria-label="Key skills demonstrated in this project" class="evidence-skills skill-tags"><li class="skill-tag" data-skill-areas="strategy">Commercial Strategy</li><li class="skill-tag" data-skill-areas="strategy">Regulatory Research</li><li class="skill-tag" data-skill-areas="sales strategy">Customer Needs Analysis</li><li class="skill-tag" data-skill-areas="sales">Strategic Account Development</li><li class="skill-tag" data-skill-areas="strategy">Value Proposition Design</li><li class="skill-tag" data-skill-areas="strategy">Executive Communication</li></ul>
+<div class="evidence-card-bottom"><div class="evidence-impact"><strong>CAD 3.2M</strong><span>Project wins attributed to the initiative in the existing portfolio</span></div>
+<a aria-label="Read full case study: Sustainability-Led Business Growth" class="learn" href="https://daxtonhuynh.github.io/business-projects/sustainability/">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
+</article>
+    <article aria-labelledby="case-title-xcelerator" class="evidence-card" data-areas="strategy" id="case-xcelerator">
+<div class="evidence-card-head">
+<div><p class="evidence-period">10</p><p class="evidence-organization">SIEMENS VIETNAM</p></div>
+<span class="evidence-logo logo-slot" data-logo="siemens"><img alt="SIEMENS VIETNAM logo"/><span class="logo-placeholder">SIEMENS VIETNAM</span></span>
+</div>
+<div class="evidence-project"><p class="evidence-project-eyebrow">INNOVATION &amp; COMMUNICATION</p><h2 id="case-title-xcelerator">Xcelerator Pitch Competition</h2><p>Made complex technology easier to understand through a creative regional pitch.</p></div>
+<div class="evidence-skill-head"><span>SKILLS &amp; TOOLS</span></div>
+<ul aria-label="Key skills demonstrated in this project" class="evidence-skills skill-tags"><li class="skill-tag" data-skill-areas="strategy">Strategic Storytelling</li><li class="skill-tag" data-skill-areas="strategy">Pitch Development</li><li class="skill-tag" data-skill-areas="strategy">Technology Communication</li><li class="skill-tag" data-skill-areas="strategy">Creative Campaign Design</li><li class="skill-tag" data-skill-areas="strategy">Executive Presentation</li></ul>
+<div class="evidence-card-bottom"><div class="evidence-impact"><strong>TOP 2</strong><span>ASEAN regional finals</span></div>
+<a aria-label="Read full case study: Xcelerator Pitch Competition" class="learn" href="https://daxtonhuynh.github.io/business-projects/xcelerator/">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
+</article>
+  </div>
+</section></div>
+</div>
+</section>
+</main>
+<footer class="site-footer"><small>© 2026 Daxton Huynh · Business meets Data<br/>Strategy · Operations · Analytics · Systems</small><a href="https://github.com/daxtonhuynhpq" rel="noopener noreferrer" target="_blank">MY GITHUB ↗</a></footer>
 <script>
 
 /* ================================================================
@@ -653,19 +1307,54 @@ document.querySelectorAll('[data-logo]').forEach(slot => {
   image.src = url;
 });
 
-const caseStudies={
- 'go2025':{link:'projects/go2025/',title:'#GO2025 Initiative — Zero-Cost Strategy',description:'An integrated initiative at AMI Education combining Sales, Marketing, and Academic Delivery to reach monthly break-even in a cost-sensitive market.',highlights:['Community-driven outreach and scholarship events','Revenue-sharing partnerships with schools and local vendors','Hybrid teaching model to optimize delivery cost'],impact:'Reached monthly break-even in March 2025 — three months ahead of plan; generated 500+ qualified leads and a 16% conversion rate.'},
- 'ami-system':{title:'Streamline Operations With a Zero-Cost System',description:'An Excel-based operations system connecting Sales, Academic, Human Resources, and Finance without paid ERP or CRM software.',highlights:['Integrated enrollment, billing, class allocation, and reporting','Designed single-input workflows to reduce duplication','Automated revenue recognition, payroll and dynamic P&L reporting'],impact:'70% reduction in administrative workload and 10% savings in monthly staffing expenses.',link:'projects/ami-operations/'},
- 'sustainability':{title:'Sustainability @ Siemens Vietnam',description:'Translated market needs, regulatory priorities and Siemens sustainability offerings into practical commercial opportunities.',highlights:['Localized sustainability priorities through customer and regulatory research','Engaged internal teams, leadership, and business partners','Developed industry-specific sales enablement materials'],impact:'The portfolio reports CAD 3.2M in sustainability-focused project wins for the initiative.'},
- 'go-digital':{title:'Go Digital! B2B Distributors',description:'Helped strategic Siemens distribution partners move from static product websites toward B2B digital commerce.',highlights:['Aligned partner product catalogs and back-end requirements','Supported product selection and e-commerce roadmap workshops','Coordinated HQ digital content packages for partner storefronts'],impact:'Reported an 80% improvement in sales data quality across three partners and at least 3% increase in digital revenue in H1 2024.'},
- 'xcelerator':{title:'Xcelerator Pitch Competition',description:'A creative go-to-market communication concept designed to make Siemens Xcelerator more memorable to technical and non-technical audiences.',highlights:['Reframed platform value through concise commercial storytelling','Led a music-led concept and pitch direction','Presented the concept in a regional competition'],impact:'Won the Vietnam round and reached Top 2 at the ASEAN regional finals.'},
- 'fmcg':{title:'FMCG Sales & Demand Forecasting',description:'An analytics project exploring practical sales forecasting at product level, from data preparation through model evaluation.',highlights:['Explore historical product sales patterns','Compare forecasting approaches against baseline predictions','Evaluate forecast errors and implications for planning decisions'],impact:'Extended forecasting analysis and a public code walkthrough are being developed.'},
- 'restaurant':{title:'Peterborough Restaurant Intelligence',description:'A customer experience analytics project based on online restaurant reviews in Peterborough.',highlights:['Explore customer review data and recurring themes','Apply NLP and topic modelling to organize feedback','Translate findings into restaurant-level recommendations'],impact:'Dashboards and analytical documentation will be linked here when publication-ready.'}
-};
-function setPage(){const hash=location.hash.replace('#','');const selected=['about','business','data'].includes(hash)?hash:'about';document.body.classList.toggle('home-active',selected==='about');document.body.classList.toggle('business-active',selected==='business');document.querySelectorAll('.tab-page').forEach(panel=>{panel.hidden=panel.id!==selected});document.querySelectorAll('.nav-tab').forEach(a=>{const active=a.dataset.tab===selected;a.classList.toggle('active',active);if(active){a.setAttribute('aria-current','page')}else{a.removeAttribute('aria-current')}});window.scrollTo({top:0,behavior:'auto'});document.title='Daxton Huynh | '+({about:'About Me',business:'Me in Business',data:'Me in Data Analytics'}[selected]);}
-window.addEventListener('hashchange',setPage);setPage();
-const dialog=document.getElementById('project-dialog');const title=document.getElementById('modal-title');const description=document.getElementById('modal-description');const highlights=document.getElementById('modal-highlights');const impact=document.getElementById('modal-impact');const link=document.getElementById('modal-link');const note=document.getElementById('modal-note');
-document.querySelectorAll('[data-case],[data-data-case]').forEach(button=>{button.addEventListener('click',()=>{const entry=caseStudies[button.dataset.case||button.dataset.dataCase];if(!entry)return;title.textContent=entry.title;description.textContent=entry.description;highlights.replaceChildren();entry.highlights.forEach(point=>{const li=document.createElement('li');li.textContent=point;highlights.appendChild(li)});impact.textContent=entry.impact;link.hidden=!entry.link;if(entry.link)link.href=entry.link;note.textContent=entry.link?'':'Detailed public case study or code repository to be added.';dialog.showModal()})});
-document.getElementById('close-dialog').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
+// Unified About / Projects navigation. The home CTA uses the same #projects state.
+function setPage() {
+  const selected = location.hash === '#projects' ? 'projects' : 'about';
+  document.body.classList.toggle('home-active',selected==='about');
+  document.body.classList.toggle('projects-active',selected==='projects');
+  document.body.classList.remove('business-active','data-active');
+  document.querySelectorAll('.tab-page').forEach(panel=>{ panel.hidden=panel.id!==selected; });
+  document.querySelectorAll('.nav-tab').forEach(a=>{
+    const active = a.dataset.tab===selected;
+    a.classList.toggle('active',active);
+    if (active) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
+  });
+  document.title='Daxton Huynh | '+(selected==='projects'?'Projects':'About Me');
+  window.scrollTo({top:0,behavior:'instant'});
+}
+window.addEventListener('hashchange',setPage);
+setPage();
+
+// Recruiter-oriented filters: each project matches one or more skills areas.
+const expertiseNames = Object.freeze({
+  all:'All Projects',systems:'Business Systems & Automation',sales:'Sales Operations & CRM',
+  analytics:'Data Analytics & Reporting',strategy:'Business Strategy & Growth',ai:'AI & Decision Modeling'
+});
+const evidenceCards = Array.from(document.querySelectorAll('#projects .evidence-card'));
+const evidenceGrid = document.getElementById('evidence-grid');
+const countLabel = document.getElementById('projects-count');
+const sortNote = document.getElementById('projects-sort-note');
+document.querySelectorAll('#projects [data-filter]').forEach(button=>{
+  button.addEventListener('click',()=>{
+    const selected=button.dataset.filter;
+    document.querySelectorAll('#projects [data-filter]').forEach(b=>{
+      const isActive=b===button;
+      b.classList.toggle('is-active',isActive);
+      b.setAttribute('aria-pressed',String(isActive));
+    });
+    evidenceGrid.classList.toggle('is-filtered',selected!=='all');
+    let visible=0;
+    evidenceCards.forEach(card=>{
+      const matches=selected==='all'||card.dataset.areas.split(' ').includes(selected);
+      card.hidden=!matches;
+      if(matches) visible++;
+      card.querySelectorAll('.skill-tag').forEach(row=>{
+        row.classList.toggle('is-match',selected!=='all' && row.dataset.skillAreas.split(' ').includes(selected));
+      });
+    });
+    countLabel.textContent=selected==='all'?`Showing all ${visible} projects`:`${visible} ${visible===1?"project":"projects"} matching ${expertiseNames[selected]}`;
+    sortNote.textContent = selected==='all' ? 'Grouped by year · newest first' : 'Matching projects · newest first';
+  });
+});
 </script>
 </body></html>
