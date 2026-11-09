@@ -451,12 +451,6 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
 }
 
 
-/* ====================================================================
-   ABOUT ME — WIDER, BALANCED DESKTOP COMPOSITION (Oct 28)
-   Spreads the career/education highlights into the empty middle area.
-   The portrait is positioned independently on the right.
-   Mobile and compact tablet layouts remain unchanged.
-   ==================================================================== */
 @media (min-width: 1100px) and (min-height: 620px) {
   body.home-active #about .hero-left {
     width: min(69%, 835px);
@@ -596,7 +590,6 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
 }
 
 
-/* ABOUT ME refinement — compact floating metrics, academic qualifications first. */
 #about .hero-inner.home-grid{grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:clamp(22px,2.2vw,36px)}
 #about .home-profile-panel{width:92%;max-width:650px;margin-left:auto;margin-right:auto}
 #about .home-metrics-education{grid-template-columns:repeat(2,minmax(0,1fr));max-width:91%}
@@ -705,13 +698,10 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
 }
 
 
-/* ABOUT ME — Nov 06 refinement: intentional line breaks, logo ratios and airy spacing.
-   Only #about is affected; neither business/data project cards nor global logo sizing changes. */
 #about .home-bio{gap:clamp(16px,2.4vh,23px);max-width:680px}
 #about .home-toolkit{margin-top:2px!important}
 #about .home-toolkit strong{color:var(--yellow);font-weight:900}
 
-/* More breathing room between the two rows and between metrics, with no enclosing cards. */
 #about .home-profile-panel{width:98%;max-width:710px}
 #about .home-metrics-education{max-width:100%;column-gap:clamp(18px,2.2vw,36px)}
 #about .home-metrics-experience{column-gap:clamp(12px,1.8vw,30px)}
@@ -765,10 +755,6 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
 }
 
 
-/* ===============================================================
-   NOV 2026 — UNIFIED, RECRUITER-ORIENTED PORTFOLIO
-   Single project list, skill-first evidence cards, no world split.
-   =============================================================== */
 #projects { background:var(--navy); }
 #projects .unified-projects { max-width:1460px; margin:auto; padding:clamp(30px,4vw,58px) clamp(23px,4.1vw,65px) 90px; }
 #projects .projects-intro { display:flex;align-items:end;justify-content:space-between;gap:34px;margin-bottom:30px; }
@@ -853,10 +839,7 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
 @media(max-width:780px){#projects .evidence-grid{grid-template-columns:1fr}#projects .projects-intro-aside{display:none}#projects .projects-meta{align-items:start;flex-direction:column}#projects .projects-intro{margin-bottom:24px}#projects .evidence-card{min-height:auto}}
 @media(max-width:600px){#projects .unified-projects{padding:28px 18px 70px}#projects .expertise-heading{display:block}#projects .expertise-heading span:last-child{display:block;margin-top:6px}#projects .expertise-filter{font-size:10px;padding:9px 12px}#projects .evidence-card{padding:18px 19px}#projects .evidence-card-bottom{flex-wrap:wrap}#projects .evidence-impact{max-width:100%}#projects .evidence-card .learn{margin-left:auto}#about .home-stat-logos.home-startup-logos{column-gap:9px!important;max-width:130px!important;height:38px!important}#about .home-stat-logos.home-startup-logos .logo-slot{height:37px!important}#about .home-stat-logos.home-startup-logos .logo-slot[data-logo="ellemuel"] img{transform:scale(1.40)!important}}
 
-/* =============================================================
-   RECRUITER PORTFOLIO — COMPACT SKILL-TAG PROJECT CARDS
-   Keep the established navy / purple / neon yellow identity.
-   ============================================================= */
+
 #projects .unified-projects{max-width:1430px;padding-top:clamp(22px,3vw,38px)}
 #projects .projects-intro{margin-bottom:23px;align-items:center}
 #projects .projects-intro h1{font-size:clamp(26px,2.8vw,39px);line-height:1.1;letter-spacing:-.045em;margin-bottom:9px}
@@ -919,7 +902,6 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
  #about .home-stat-logos.home-startup-logos .logo-slot[data-logo="mantahq"] img{transform:scale(1.20)!important}
  #about .home-stat-logos.home-startup-logos .logo-slot[data-logo="ellemuel"] img{transform:scale(1.68)!important}
 }
-/* Final density tuning: close to the original ~300px portfolio tiles. */
 #projects .evidence-card{padding:16px 20px 15px;min-height:312px}
 #projects .evidence-project{margin:9px 0 9px}
 #projects .evidence-project h2{font-size:clamp(17px,1.35vw,20px);margin-bottom:7px}
@@ -930,22 +912,15 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
 @media(max-width:600px){#projects .evidence-card{min-height:0;padding:18px 19px}}
 
 
-/* =================================================================
-   NOV 06 — HERO SPACING REFINEMENT (user-approved direction)
-   Wider left column + closer two-column composition; lift the
-   education/experience cluster without shifting tablet/mobile.
-   ================================================================= */
 @media (min-width:1081px) and (min-height:620px) {
   #about .home-profile-panel {
     transform: translateY(-25px);
   }
-  /* The CTA should not sit lower than the introductory content. */
   #about .hero-cta {
     transform: translateY(7px) !important;
   }
 }
-/* Keep the left narrative and right credentials stacked on tablets/phones.
-   The older desktop grid override otherwise persists below 1081px. */
+
 @media (max-width:1080px) {
   #about .hero-inner.home-grid {
     grid-template-columns: minmax(0,1fr);
@@ -956,8 +931,7 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
   }
 }
 
-/* PROJECT CHRONOLOGY: year sections only when All Projects is selected.
-   Filtered results revert to one compact, uninterrupted card grid. */
+
 #projects .evidence-grid:not(.is-filtered) {
   display:flex;
   flex-direction:column;
@@ -1128,7 +1102,7 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
         <li class="skill-tag" data-skill-areas="strategy">Pilot &amp; Validation Design</li>
       </ul>
       <div class="evidence-card-bottom"><div class="evidence-impact"><strong>2ND PLACE</strong><span>Agriculture stream · 2026 innovation startup pitch</span></div>
-        <a aria-label="Read full case study: CAFÉ Agri-Food Startup Strategy" class="learn" href="case-studies/cafe/index.html">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
+        <a aria-label="Read full case study: CAFÉ Agri-Food Startup Strategy" class="learn" href="https://daxtonhuynh.github.io/business-projects/innovation-pitch/">LEARN MORE <span aria-hidden="true" class="learn-circle">↗</span></a></div>
     </article>
     <!-- 2026 / NEW: Trent University · Forecasting and operations analytics -->
     <article aria-labelledby="case-title-fmcg" class="evidence-card" data-areas="systems sales analytics" id="case-fmcg">
@@ -1282,12 +1256,6 @@ a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline
 <footer class="site-footer"><small>© 2026 Daxton Huynh · Business meets Data<br/>Strategy · Operations · Analytics · Systems</small><a href="https://github.com/daxtonhuynhpq" rel="noopener noreferrer" target="_blank">MY GITHUB ↗</a></footer>
 <script>
 
-/* ================================================================
-   IMAGE FILES IN THE SAME docs/assets/ FOLDER AS YOUR SCREENSHOT
-   Filenames and capitalization must match exactly on GitHub Pages.
-   MantaHQ is an SVG; all other organization logos are PNGs.
-   To swap a logo later, change ONLY its path in the object below.
-   ================================================================ */
 const LOGO_PNG_URLS = {
   siemens:       'assets/siemens-logo.png',
   ami:           'assets/ami-logo.png',
